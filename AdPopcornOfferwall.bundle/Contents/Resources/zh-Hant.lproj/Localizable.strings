@@ -1,0 +1,179 @@
+/*
+ Localizable.strings
+ AdPOPcornSDKRevision
+ 
+ Created by wonje,song on 13. 2. 5..
+ Copyright (c) 2013년 wonje,song. All rights reserved.
+ */
+
+/* Chinese zh-hant */
+
+/* Title used for offer wall top bar */
+"offerWallTopBarTitle" = "事件";
+
+/* Title used for alert view title */
+"alertViewTitle" = "廣告爆米花";
+
+/* Message used for alert view message for general error */
+"alertViewGeneralErrorMessage" = "廣告加載緩慢。\n請稍後再次嘗試。";
+
+/* Message used for alert view message for already participated campaign error */
+"alertViewAlreadyParticipatedCampaignErrorMessage" = "已參加此活動。";
+
+/* Title used for alert view confirm button */
+"confirm" = "確認";
+
+/* Title used for landing view close button */
+"close" = "關閉";
+
+"alerViewAlreadyInstalledAppMessage" = "已安裝此應用，無法再次參與。請確認。";
+
+"alerViewNotYetInstalledMessage" = "未安裝此應用，需要跳轉至安裝界面嗎？";
+"alerViewNotOpenToInstallAppURLMessage" = "無法跳轉至App Store，請聯繫客服中心。";
+
+"checkParticipate" = "確認參與";
+"participating" = "參與中";
+"checkingIsFavorite" = "檢查點贊中";
+
+"alreadyfavorited" = "原來已成為粉絲！很可惜粉絲不可參與此活動。";
+
+"rewardComplete" = "已成功提交支付道具申請。根據網絡狀況，道具支付最長需花費5分鐘。";
+
+"notYetisFavoriteComplete" = "尚未點贊，請確認。";
+
+"participate" = "參與";
+"viewDetail" = "詳細說明";
+
+"wrongURLAddress" = "URL地址發送錯誤，請聯繫客服中心。";
+
+
+"checkInstall" = "確認安裝";
+
+"copyRecommendCode" = "推薦代碼已復制。";
+
+"rewardWaiting" = "待付款";
+"rewardCompleted" = "完成付款";
+
+
+"participateListTableHeaderText" = "根據網絡狀況，道具支付最長需花費2個小時。";
+
+"csGuideText" = "有任何疑問，請再次留言。我們將盡快為您答复。";
+
+"csNotiText" = "*收集的個人信息(邮箱)是被用於CS處理和問題解決，儲存一段時間後將被刪除";
+
+
+"inquiry" = "諮詢內容";
+"receiveAReplyEmail" = "接收回复的郵箱";
+"pleaseEnterYourEmail"= "請輸入郵箱。";
+
+
+"alertNoEmailMessage" = "請輸入接收回复的郵箱。";
+"alertNoAskMessage" = "請輸入諮詢內容。";
+
+"alertCSAddedMessage" = "已提交諮詢內容。";
+
+"alertSendMailFailMessage" = "郵件發送失敗。";
+
+"wrongEmailFormatMessage" = "郵箱格式不正確,請檢查後重新輸入。";
+
+"csTypeEmailSubject" = "[聯繫adPOPcorn]%@";
+
+"csTypeEmailMessageBody" = "接收回复的郵箱 : %@\n諮詢內容 : %@";
+
+"couponCopyGuide" = "長按優惠券代碼即可複制。";
+
+"couponCopiedMessage" = "優惠券代碼%@已復制。";
+
+"pleaseSelectTheEventYouWantToContactTitle" = "請選擇欲提問的活動。";
+
+"couponList" = "優惠券列表";
+
+"customerService" = "客服中心";
+
+"send" = "發送";
+
+"adParticiateButtonText" = "廣告參與";
+"particiateHistoryButtonText" = "參與歷史";
+"promotingButtonText" = "朋友邀請";
+
+"promotingLinkType" = "鏈接類型";
+"promotingCouponType" = "優惠券類型";
+
+"commonPromotingItemQuantity" = "朋友訪問時,\n%@";
+"CPIPromotingItemQuantity" = "朋友運行時,\n%@";
+"LoginPromotingItemQuantity" = "朋友登錄時,\n%@";
+"CPAPromotingItemQuantity" = "朋友註冊時,\n%@";
+
+"invitedCount" = "成功邀請 : %@名";
+"earnedReward" = "總共獲得%@ %@";
+
+"copy" = "複製";
+"viewRanking" = "查看排名";
+
+"promotingPartipateMethod1" = "1. 通過WeChat, QQ等多種方法向朋友推薦%@。 (可自定義推薦內容)";
+
+"promotingPartipateMethod2LinkType" = "2. 當朋友點擊推薦鏈接，並%@ %@后，將按照朋友數量立即發送獎勵。";
+
+"promotingPartipateMethod2CouponType" = "2. 當朋友點擊推薦鏈接，%@ %@，並輸入優惠券號碼后，將按照朋友數量立即發送獎勵。";
+
+"install&connect" = "安裝&訪問";
+"install&execute" = "安裝&運行";
+"install&login" = "安裝&登錄";
+"install&reg" = "安裝&會員註冊";
+
+"promotingCautionMessage" = "注意！朋友邀請作為應用推薦的途徑，對於本人安裝應用不進行獎勵。";
+
+"textCopied" = "已複製";
+
+"inviteCompensation" = "邀請獎勵";
+"rankCompensation" = "等級獎勵";
+
+"isOverseaOfferMessage" = "此廣告為“海外廣告”，只最初參與時進行獎勵。根據網絡狀態，獎勵支付最長需花費2個小時。要繼續嗎？";
+
+"yes" = "是";
+"no" = "否";
+
+"howToParticipate" = "參與方法";
+
+"description" = "描述";
+
+"canNotParticipateInThisCampaignMessage" = "沒有可參加的活動。";
+
+"deviceNotConfiguredToSendSMSMessage" = "設備未配置發送短信功能。";
+
+"shareNotiMessage" = "消息已復制，分享到%@。";
+
+"contactUs" = "聯繫我們";
+"privacyPolicy" = "隱私政策";
+"pleaseCheckInTheMailSettings" = "請確認郵件設置。";
+
+
+"remainQuantity" = "[剩餘數量:%@個]";
+
+"notice" = "通知";
+
+"viralPromotionNoticeMessage" = "通過發送虛假信息邀請好友來獲利的情況，將沒收全部非法收益及刪除賬號。";
+
+"agree" = "同意";
+"deny" = "不同意";
+
+"contactUsMailMessage" = "adPOPcorn期待所有實力公司的合作。\n<合作諮詢>\n*公司名: \n*負責人: \n*聯繫方式: \n*郵箱: \n*內容 : ";
+
+"contactUsAlertMessage" = "此菜單為合作專用通道，廣告參與詳情請通過客服中心進行諮詢。需要跳轉至客服中心嗎？";
+
+
+"install" = "安裝";
+
+"alerViewCompletedParticipateEventMessage" = "已參與此活動。";
+
+"quitTheVideoNowMessage" = "現在關閉視頻將無法獲得獎勵，確定要關閉嗎？";
+"videoWatchAgainMessage" = "視頻尚未結束，需要繼續進行觀看嗎？";
+
+
+"anUnknownErrorMessage" = "發生未知錯誤，請聯繫客服中心。";
+"theCampaignEndedMessage" = "此活動已結束。";
+
+"couponCode" = "優惠券代碼";
+
+"freeDownload" = "免費下載";
+"learnMore" = "了解更多";

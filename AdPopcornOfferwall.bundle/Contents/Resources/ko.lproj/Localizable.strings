@@ -1,0 +1,171 @@
+/*
+ Localizable.strings
+ AdPOPcornSDKRevision
+ 
+ Created by wonje,song on 13. 2. 5..
+ Copyright (c) 2013년 wonje,song. All rights reserved.
+ */
+
+/* Title used for offer wall top bar */
+"offerWallTopBarTitle" = "이벤트";
+
+/* Title used for alert view title */
+"alertViewTitle" = "애드팝콘";
+
+/* Message used for alert view message for general error */
+"alertViewGeneralErrorMessage" = "광고 요청이 원활하지 않습니다.\n잠시 후에 다시 이용 부탁드립니다.";
+
+/* Message used for alert view message for already participated campaign error */
+"alertViewAlreadyParticipatedCampaignErrorMessage" = "이미 참여한 광고입니다.";
+
+/* Title used for alert view confirm button */
+"confirm" = "확인";
+
+/* Title used for landing view close button */
+"close" = "닫기";
+
+"alerViewAlreadyInstalledAppMessage" = "이미 설치되어 있는 App.이어서 참여할 수 없습니다. 확인 부탁드립니다.";
+"alerViewNotYetInstalledMessage" = "아직 앱이 설치되지 않았습니다. 설치 화면으로 이동하시겠습니까?";
+"alerViewNotOpenToInstallAppURLMessage" = "App Store로 이동할 수 없습니다. 고객센터로 문의바랍니다.";
+
+"checkParticipate" = "참여 확인";
+"participating" = "참여중..";
+"checkingIsFavorite" = "좋아요 확인중..";
+
+"alreadyfavorited" = "이미 팬이시군요! 아쉽게도 이미 팬이신분은 이벤트 참여가 불가능합니다.";
+
+"rewardComplete" = "정상적으로 아이템 지급 요청이 되었습니다. 네트워크 사정에 따라 아이템 지급은 최대 5분까지 걸릴수 있습니다.";
+
+"notYetisFavoriteComplete" = "아직 좋아요!가 완료되지 않았습니다. 확인 부탁드립니다.";
+
+"participate" = "참여하기";
+"viewDetail" = "상세보기";
+
+"wrongURLAddress" = "잘못된 URL 주소입니다. 고객센터로 문의바랍니다.";
+
+"checkInstall" = "설치확인";
+
+"copyRecommendCode" = "추천 코드가 복사되었습니다.";
+
+"rewardWaiting" = "지급 대기";
+"rewardCompleted" = "지급 완료";
+
+
+//"participateListTableHeaderText" = "광고 참여 완료 상태에서 보상 지급 완료까지는 네트워크 사정에 따라 최대 2시간까지 소요될 수 있습니다.";
+"participateListTableHeaderText" = "네트워크 사정에 따라 아이템 지급은 최대 2시간 까지 걸릴 수 있습니다.";
+
+"csGuideText" = "문의 사항이 있으시면 이곳에 남겨주세요. 빠른 시간안에 답변을 드리도록 하겠습니다.";
+"csNotiText" = "*수집된 개인정보(이메일 주소)는 CS처리 및 문제 해결을 위해 사용되며, 일정기간 보관 후 삭제됩니다.";
+
+"inquiry" = "문의내용";
+"receiveAReplyEmail" = "회신받을 이메일";
+"pleaseEnterYourEmail" = "이메일을 입력해주세요.";
+
+"alertNoEmailMessage" = "회신 받을 이메일 주소를 입력해 주세요.";
+"alertNoAskMessage" = "문의 내용을 입력해 주세요.";
+
+"alertCSAddedMessage" = "문의 내용이 접수되었습니다.";
+
+"alertSendMailFailMessage" = "메일 전송이 실패하였습니다.";
+
+"wrongEmailFormatMessage" = "이메일 형식이 맞지 않습니다. 확인 후 다시 입력해주세요.";
+
+"csTypeEmailSubject" = "[애드팝콘 문의]%@";
+
+"csTypeEmailMessageBody" = "회신 받을 이메일 주소 : %@\n문의 내용 : %@";
+
+"couponCopyGuide" = "쿠폰 번호를 길게 누르시면 복사가 됩니다.";
+
+"couponCopiedMessage" = "%@ 쿠폰 번호가 복사되었습니다.";
+
+"pleaseSelectTheEventYouWantToContactTitle" = "문의할 이벤트를 선택해주세요.";
+
+"couponList" = "쿠폰 리스트";
+
+"customerService" = "고객센터";
+
+"send" = "보내기";
+
+"adParticiateButtonText" = "광고참여";
+"particiateHistoryButtonText" = "참여이력";
+"promotingButtonText" = "친구초대";
+
+"promotingLinkType" = "링크형";
+"promotingCouponType" = "쿠폰형";
+
+"commonPromotingItemQuantity" = "친구가 접속 시 마다\n%@";
+"CPIPromotingItemQuantity" = "친구가 실행하면\n%@";
+"LoginPromotingItemQuantity" = "친구가 로그인하면\n%@";
+"CPAPromotingItemQuantity" = "친구가 회원가입하면\n%@";
+
+"invitedCount" = "초대성공 : %@명";
+"earnedReward" = "총 %@ %@ 획득";
+
+"copy" = "복사";
+"viewRanking" = "순위보기";
+
+//"promotingPartipateMethod1" = "1. 다양한 방법으로 친구들에게 앱을 소개합니다. 소개 글은 직접 편집에서 사용하실 수 있습니다.";
+"promotingPartipateMethod1" = "1. 페이스북, 카카오톡등 다양한 방법으로 친구들에게 %@를(을) 소개해보세요(소개글은 본인이 직접 편집할 수 있습니다.) ";
+"promotingPartipateMethod2LinkType" = "2. 소개글의 설치 링크를 클릭하여 친구가 %@를(을) %@하면, 친구 수 만큼 보상이 즉시 지급됩니다.";
+"promotingPartipateMethod2CouponType" = "2. 소개글의 설치 링크를 클릭하여 친구가 %@를(을), %@ 후 쿠폰번호를 입력하면, 친구 수 만큼 보상이 즉시 지급됩니다.";
+
+"install&connect" = "설치&접속";
+"install&execute" = "설치&실행";
+"install&login" = "설치&로그인";
+"install&reg" = "설치&회원가입";
+
+"promotingCautionMessage" = "주의! 친구초대는 앱을 소개하기 위한 서비스이므로 본인이 설치한 앱은 리워드 획득에서 제외됩니다.";
+
+"textCopied" = "복사되었습니다.";
+
+"inviteCompensation" = "초대보상";
+"rankCompensation" = "순위보상";
+
+"isOverseaOfferMessage" = "선택하신 광고는 '해외광고'이며, 참여보상은 최초 참여시 1회만 지급됩니다. 리워드 지급은 네트워크 사정에 따라 최대 2시간까지 소요될 수 있습니다. 계속 진행하시겠습니까?";
+
+"yes" = "예";
+"no" = "아니오";
+
+"howToParticipate" = "참여 방법";
+
+"description" = "설명";
+
+"canNotParticipateInThisCampaignMessage" = "참여가능한 캠페인이 없습니다.";
+"deviceNotConfiguredToSendSMSMessage" = "SMS을 보낼 수 있는 설정이 안되어 있습니다.";
+
+"shareNotiMessage" = "메시지가 복사되었습니다. %@에 공유 부탁드립니다.";
+
+"contactUs" = "제휴문의";
+"privacyPolicy" = "개인정보 취급방침";
+
+"pleaseCheckInTheMailSettings" = "메일 설정 확인 부탁합니다.";
+
+
+"remainQuantity" = "[남은수량:%@건]";
+
+"notice" = "알림";
+
+"viralPromotionNoticeMessage" = "친구초대 시 허위사실을 유포하여 이득을 취할 경우 부당이득 전량 회수 및 계정 제재 처리를 받게 됩니다.";
+
+"agree" = "동의";
+"deny" = "동의안함";
+
+"contactUsMailMessage" = "adPOPcorn과 함께할 역량 있는 기업의 참여를 기다립니다.\n<제휴문의>\n*회사명 : \n*담당자 : \n*연락처 : \n*이메일 : \n*내용 : ";
+
+"contactUsAlertMessage" = "본 메뉴는 제휴문의 전용입니다. 광고참여 관련 문의는 고객센터를 통해 접수하여 주시기 바랍니다. 고객센터 메뉴로 이동하시겠습니까?";
+
+"install" = "설치";
+
+"alerViewCompletedParticipateEventMessage" = "참여 완료된 이벤트입니다.";
+
+"quitTheVideoNowMessage" = "지금 비디오를 종료하시면 리워드가 지급되지 않습니다. 종료하시겠습니까?";
+
+"videoWatchAgainMessage" = "비디오 시청이 완료되지 않았습니다. 다시 시청하시겠습니까?";
+
+"anUnknownErrorMessage" = "알수 없는 오류입니다. 고객센터로 문의바랍니다.";
+"theCampaignEndedMessage" = "종료된 캠페인입니다.";
+
+"couponCode" = "쿠폰 번호";
+
+"freeDownload" = "무료 다운로드";
+"learnMore" = "더 알아보기";
