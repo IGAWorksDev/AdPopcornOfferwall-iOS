@@ -1,0 +1,177 @@
+/*
+ Localizable.strings
+ AdPOPcornSDKRevision
+ 
+ Created by wonje,song on 13. 2. 5..
+ Copyright (c) 2013년 wonje,song. All rights reserved.
+ */
+
+/* Title used for offer wall top bar */
+"offerWallTopBarTitle" = "Event";
+
+/* Title used for alert view title */
+"alertViewTitle" = "adPOPcorn";
+
+/* Message used for alert view message for general error */
+"alertViewGeneralErrorMessage" = "Ad request is not smooth. \nAsk again in a few minutes.";
+
+/* Message used for alert view message for no campaign error */
+"alertViewNoCampaignErrorMessage" = "There are no available campaigns. Click the button below for more detail.";
+
+/* Message used for alert view message for already participated campaign error */
+"alertViewAlreadyParticipatedCampaignErrorMessage" = "Already Participated this Campaign.";
+
+/* Title used for alert view confirm button */
+"confirm" = "Confirm";
+
+/* Title used for landing view close button */
+"close" = "Close";
+
+"alerViewAlreadyInstalledAppMessage" = "Already installed App. Then can not participate. Ask for confirmation.";
+
+"alerViewNotYetInstalledMessage" = "App is not installed yet. Do you want to go to the setup screen?";
+"alerViewNotOpenToInstallAppURLMessage" = "App Store can not be moved. Please contact Customer Service.";
+
+"checkParticipate" = "Confirm participation";
+"participating" = "Participating in..";
+"checkingIsFavorite" = "Checking like..";
+
+"alreadyfavorited" = "You're a fan already! Unfortunately, the identity of the fan is already possible to participate in the event.";
+
+"rewardComplete" = "This item has been successfully payment request. Payments are subject to network items may take up to 5 minutes.";
+
+"notYetisFavoriteComplete" = "Still like is not complete. Ask for confirmation.";
+
+"participate" = "Participate";
+"viewDetail" = "See details";
+
+"wrongURLAddress" = "Invalid URL address. Please contact Customer Service.";
+
+"checkInstall" = "Verifying the Installation";
+
+"copyRecommendCode" = "Recommended code was copied.";
+
+"rewardWaiting" = "Pending payment";
+"rewardCompleted" = "Complete payment";
+
+
+"participateListTableHeaderText" = "It may take up to 2 hours for the reward to be delivered depending on your network situation.";
+"csGuideText" = "If you have any questions, please leave here. In answer, let me quickly.";
+"csNotiText" = "*The collected personal information (email address) is used for CS processing and problem solving, and will be deleted after a period of storage.";
+
+
+"inquiry" = "Inquiry";
+"receiveAReplyEmail" = "Your email";
+"pleaseEnterYourEmail"= "Please Enter Your Email.";
+
+"alertNoEmailMessage" = "Please enter your email address to receive replies.";
+"alertNoAskMessage" = "Please enter your contact details.";
+
+"alertCSAddedMessage" = "Contact information has been received.";
+
+"alertSendMailFailMessage" = "Mail delivery failed.";
+
+
+"wrongEmailFormatMessage" = "Email format is not correct. Please check and re-enter.";
+
+"csTypeEmailSubject" = "[Contact AdPopcorn]%@";
+
+"csTypeEmailMessageBody" = "Receive a reply email address : %@\nInquiry : %@";
+
+"couponCopyGuide" = "Press and hold the coupon code will be copied.";
+
+"couponCopiedMessage" = "%@ coupon code was copied.";
+
+"pleaseSelectTheEventYouWantToContactTitle" = "Select the campaign.";
+
+"couponList" = "Coupon List";
+
+"customerService" = "Customer Service";
+
+"send" = "Send";
+
+"adParticiateButtonText" = "Offer";
+"particiateHistoryButtonText" = "History";
+"promotingButtonText" = "Invite offer";
+
+"promotingLinkType" = "Link Type";
+"promotingCouponType" = "Coupon Type";
+
+
+"commonPromotingItemQuantity" = "%@\nper launch";
+"CPIPromotingItemQuantity" = "%@\nper launch";
+"LoginPromotingItemQuantity" = "%@\nper login";
+"CPAPromotingItemQuantity" = "%@\nper register";
+
+"invitedCount" = "Total Invitations : %@";
+"earnedReward" = "Obtain a total of %@ %@";
+
+"copy" = "Copy";
+"viewRanking" = "View rank";
+
+"promotingPartipateMethod1" = "1. Introduce %@ to your friends through Facebook, KakaoTalk, and so forth. (You can introduce the app to your friends with your own message)";
+"promotingPartipateMethod2LinkType" = "2. Once your friends click the link and completes the %@ for %@ you will be rewarded per complete.";
+"promotingPartipateMethod2CouponType" = "2. Once your friends click the link and completes the %@ for %@, and enters the coupon numbers, you will be rewarded per complete.";
+
+"install&connect" = "Install&Launch";
+"install&execute" = "Install&Launch";
+"install&login" = "Install&Login";
+"install&reg" = "Install&Register";
+
+
+"promotingCautionMessage" = "Attention! Invite a friend to introduce you to the app, so I have installed the app service Rewards will be excluded from acquisition.";
+
+"textCopied" = "Copied";
+
+"inviteCompensation" = "Invite compensation";
+"rankCompensation" = "Rank compensation";
+
+"isOverseaOfferMessage" = "Advertising choice overseas advertising. If you have downloaded the app to the past history of reward is not paid. Reward payments are subject to the network, it may take up to 2 hours. Do you want to continue?";
+
+"yes" = "yes";
+"no" = "no";
+
+"howToParticipate" = "How to participate";
+
+"description" = "description";
+
+"canNotParticipateInThisCampaignMessage" = "Can not participate in this campaign.";
+
+"deviceNotConfiguredToSendSMSMessage" = "Device not configured to send SMS.";
+
+"shareNotiMessage" = "Message is copied. Share on %@ and ask.";
+
+"contactUs" = "Contact us";
+"privacyPolicy" = "Privacy policy";
+"pleaseCheckInTheMailSettings" = "Please check in the mail settings.";
+
+
+"remainQuantity" = "[remaining qty:%@]";
+
+"notice" = "Notice";
+
+"viralPromotionNoticeMessage" = "If you get the reward by spreading false information, your reward will be reclaimed and the account will be suspended.";
+
+"agree" = "agree";
+"deny" = "deny";
+
+"contactUsMailMessage" = "adPOPcorn is awating you to be with you!\n<Partnership Inquiry>\n*Company Name : \n*Contacting Person : \n*Contact No. : \n*Email : \n*Content : ";
+
+"contactUsAlertMessage" = "This menu is for those who wants to be our partner. If you have a question about partnership, click 'No' button. Otherwise click 'Yes' button to go to customer service center to ask about your reward issue.";
+
+
+"install" = "install";
+
+"alerViewCompletedParticipateEventMessage" = "Participation in the event is completed.";
+
+"quitTheVideoNowMessage" = "If you quit the video now, you will not recieve the reward. Are you sure you want to quit?";
+
+"videoWatchAgainMessage" = "You have not finished watching your video. Would you like to start again?";
+
+"anUnknownErrorMessage" = "An unknown error. Please contact the Customer Care Center.";
+"theCampaignEndedMessage" = "The campaign ended.";
+
+"couponCode" = "Coupon codes";
+
+"freeDownload" = "Free Download";
+"learnMore" = "Learn More";
