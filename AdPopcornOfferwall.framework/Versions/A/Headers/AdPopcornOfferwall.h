@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "APError.h"
 
 
 @protocol AdPopcornOfferwallDelegate;
@@ -56,6 +57,18 @@
  */
 + (void)didGiveRewardItemWithRewardKey:(NSString *)rewardKey;
 
+/*!
+ @abstract
+ loadVideoAd.
+ 
+ @discussion
+ 비디오 광고를 요청한다.
+ 
+ @param vController          비디오를 노출시킬 view controller
+ @param delegate             AdPopcornDelegate
+ */
++ (void)loadVideoAd:(id)delegate;
++ (void)showVideoAdWithViewController:(UIViewController *)vController delegate:(id)delegate;
 @end
 
 
@@ -128,5 +141,51 @@
  */
 - (void)didClosePromotionEvent;
    
+/*!
+ @abstract
+ video 광고 로드에 성공한 경우 호출된다.
+ @discussion
+ */
+- (void)loadVideoAdSuccess;
 
+/*!
+ @abstract
+ video 광고 로드에 실패한 경우 호출된다.
+ 
+ @discussion
+ */
+- (void)loadVideoAdFailedWithError:(APError *)error;
+
+/*!
+ @abstract
+ video 광고가 열리기 전에 호출된다.
+ 
+ @discussion
+ */
+- (void)willOpenVideoAd;
+
+/*!
+ @abstract
+ video 광고가 열린직 후 호출된다.
+ 
+ @discussion
+ */
+- (void)didOpenVideoAd;
+
+
+/*!
+ @abstract
+ video 광고가 닫히기 전에 호출된다.
+ 
+ @discussion
+ */
+- (void)willCloseVideoAd;
+
+/*!
+ @abstract
+ video 광고가 닫힌직 후 호출된다.
+ 
+ @discussion
+ */
+- (void)didCloseVideoAd;
 @end
