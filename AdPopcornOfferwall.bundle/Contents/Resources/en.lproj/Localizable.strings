@@ -179,3 +179,5 @@
 "etcCS" = "Etc";
 
 "invite" = "invite";
+
+"idfaTrackingAlertMessage" = " ‘If you activate 'Limit Ad Tracking', you are not allowed to participate the campaign.\n Please de-activate Limit Ad Tracking to participate. Settings->Privacy-> Advertising -> Limit Ad Tracking";
