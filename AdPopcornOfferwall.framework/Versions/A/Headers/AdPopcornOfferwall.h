@@ -57,7 +57,18 @@
  */
 + (void)didGiveRewardItemWithRewardKey:(NSString *)rewardKey;
 
+ /*!
+ @abstract
+ IGAWorks에 리워드 지급이 필요한 정보가 있는지 확인 요청을 한다.
+ 
+ @discussion
+ 일반적으로 자동으로 pending된 리워드 정보가 업데이트 되지만, 사용자가 직접 pending된 리워드가 있는지 수동으로 확인하기 위한 요청 API.
+ 
+ */
++ (void)getClientPendingRewardItems;
+
 /*!
+ 
  @abstract
  loadVideoAd.
  
