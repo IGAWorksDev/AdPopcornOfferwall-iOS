@@ -20,6 +20,9 @@ typedef NS_ENUM(NSInteger, APErrorCode){
     APInvalidMediaKey = 1400,
     APUserKeyMissing = 2250,
     
+    APTerminatedOrInvalidCampaign = 999,
+    APCompletedCampaign = 2000,
+    
     APServerTimeout = 5000,
     APAllLoadedVideoShown = 5005,
     APUnknownException = 9999

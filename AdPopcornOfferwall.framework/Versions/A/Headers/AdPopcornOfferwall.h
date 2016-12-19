@@ -25,6 +25,13 @@
 @property (nonatomic, unsafe_unretained) BOOL doNotShowContactUs;
 
 
+typedef enum _VideoType
+{
+    AllVideoType,
+    RewardVideoType,
+    NonRewardVideoType
+} VideoType;
+
 /*!
  @abstract
  singleton AdPopcorn 객체를 반환한다.
@@ -199,4 +206,12 @@
  @discussion
  */
 - (void)didCloseVideoAd;
+
+/*!
+ @abstract
+ reward video 광고 참여 시도에 실패 했을때 호출된다.
+ 
+ @discussion
+ */
+- (void)showVideoAdFailedWithError:(APError *)error;
 @end
