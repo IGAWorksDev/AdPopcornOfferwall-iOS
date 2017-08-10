@@ -12,7 +12,7 @@
 
 
 @protocol AdPopcornOfferwallDelegate;
-
+@protocol AdPopcornOfferwallClientRewardDelegate;
 
 @interface AdPopcornOfferwall : NSObject
 {
@@ -20,17 +20,9 @@
 }
 
 
-@property (nonatomic, unsafe_unretained) id<AdPopcornOfferwallDelegate> delegate;
+@property (nonatomic, weak) id<AdPopcornOfferwallDelegate> delegate;
 
-@property (nonatomic, unsafe_unretained) BOOL doNotShowContactUs;
-
-
-typedef enum _VideoType
-{
-    AllVideoType,
-    RewardVideoType,
-    NonRewardVideoType
-} VideoType;
+@property (nonatomic, weak) id<AdPopcornOfferwallClientRewardDelegate> clientRewardDelegate;
 
 /*!
  @abstract
@@ -51,19 +43,6 @@ typedef enum _VideoType
  */
 + (void)openOfferWallWithViewController:(UIViewController *)vController delegate:(id)delegate userDataDictionaryForFilter:(NSMutableDictionary *)userDataDictionaryForFilter;
 
-+ (void)openPromotionEvent:(UIViewController *)vController delegate:(id)delegate;
-
-/*!
- @abstract
- IGAWorks에 리워드 지급 확정 처리를 요청한다.
- 
- @discussion
- 이곳에서 사용자에게 리워드 지급 처리를 한다. 지급 처리가 완료 되었다면, 해당 메소드를 호출하여 IGAWorks에 리워드 지급 확정 처리를 요청한다.
- 
- @param rewardKey            리워드 식별키
- */
-+ (void)didGiveRewardItemWithRewardKey:(NSString *)rewardKey;
-
  /*!
  @abstract
  IGAWorks에 리워드 지급이 필요한 정보가 있는지 확인 요청을 한다.
@@ -75,7 +54,18 @@ typedef enum _VideoType
 + (void)getClientPendingRewardItems;
 
 /*!
+ @abstract
+ IGAWorks에 리워드 지급 확정 처리를 요청한다.
  
+ @discussion
+ 이곳에서 사용자에게 리워드 지급 처리를 한다. 지급 처리가 완료 되었다면, 해당 메소드를 호출하여 IGAWorks에 리워드 지급 확정 처리를 요청한다.
+ 
+ @param rewardKey 리워드 식별키
+ */
++ (void)didGiveRewardItemWithRewardKey:(NSString *)rewardKey;
+
+
+/*!
  @abstract
  loadVideoAd.
  
@@ -127,38 +117,6 @@ typedef enum _VideoType
  */
 - (void)didCloseOfferWall;
 
-/*!
- @abstract
- promotion event가 열리기 전에 호출된다.
- 
- @discussion
- */
-- (void)willOpenPromotionEvent;
-
-/*!
- @abstract
- promotion event가 열린직 후 호출된다.
- 
- @discussion
- */
-- (void)didOpenPromotionEvent;
-
-/*!
- @abstract
- promotion event가 닫히기 전에 호출된다.
- 
- @discussion
- */
-- (void)willClosePromotionEvent;
-
-/*!
- @abstract
- promotion event가 닫힌직 후 호출된다.
- 
- @discussion
- */
-- (void)didClosePromotionEvent;
-   
 /*!
  @abstract
  video 광고 로드에 성공한 경우 호출된다.
@@ -214,4 +172,38 @@ typedef enum _VideoType
  @discussion
  */
 - (void)showVideoAdFailedWithError:(APError *)error;
+@end
+
+@protocol AdPopcornOfferwallClientRewardDelegate <NSObject>
+
+@optional
+
+/*!
+ @abstract
+ 사용자에게 지급할 아이템이 있을때 호출된다.
+ 
+ @discussion
+ 사용자에게 아이템을 지급하고, 지급이 완료되면 didGiveRewardItemWithRewardKey 메소드를 호출하여 지급 완료 확정 처리를 한다.
+ */
+- (void)onRewardRequestResult:(BOOL)isSuccess withMessage:(NSString *)message itemName:(NSString *)itemName itemKey:(NSString *)itemKey campaignName:(NSString *)campaignName campaignKey:(NSString *)campaignKey rewardKey:(NSString *)rewardKey quantity:(NSInteger)quantity;
+
+
+/*!
+ @abstract
+ 사용자에게 지급할 아이템이 있을때 호출된다. 아이템 리스트를 전달한다.
+ 
+ @discussion
+ 사용자에게 아이템을 지급하고, 지급이 완료되면 didGiveRewardItemWithRewardKey 메소드를 호출하여 지급 완료 확정 처리를 한다.
+ */
+- (void)onRewardRequestResult:(BOOL)isSuccess withMessage:(NSString *)message items:(NSArray *)items;
+
+/*!
+ @abstract
+ Reward 지급 확정 처리 콜백 메소드.
+ 
+ @discussion
+ didGiveRewardItemWithRewardKey 메소드에서 reward 지급 처리를 완료한 뒤에 IGAWorks에 요청한 결과가 이 곳으로 리턴된다. isSuccess가 YES가 리턴되어야 최종 reward 지급이 완료된다.
+ */
+- (void)onRewardCompleteResult:(BOOL)isSuccess withMessage:(NSString *)message resultCode:(NSInteger)resultCode withCompletedRewardKey:(NSString *)completedRewardKey;
+
 @end

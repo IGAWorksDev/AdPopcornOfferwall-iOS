@@ -5,178 +5,103 @@
  Created by wonje,song on 13. 2. 5..
  Copyright (c) 2013년 wonje,song. All rights reserved.
  */
-
-/* Title used for offer wall top bar */
 "offerWallTopBarTitle" = "[イベント]";
-
-/* Title used for alert view title */
 "alertViewTitle" = "アドポップコーン";
-
-/* Message used for alert view message for general error */
 "alertViewGeneralErrorMessage" = "サーバへのアクセスが集中しています。\nしばらくしてから、もう一度お試しください。";
-
-/* Message used for alert view message for already participated campaign error */
 "alertViewAlreadyParticipatedCampaignErrorMessage" = "既に参加した[イベント]です。";
-
-/* Title used for alert view confirm button */
 "confirm" = "確認";
-
-/* Title used for landing view close button */
 "close" = "閉じる";
-
 "alerViewAlreadyInstalledAppMessage" = "このアプリは既にインストールされています。";
-
 "alerViewNotYetInstalledMessage" = "まだアプリがインストールされていません。インストールページに移動しますか？";
 "alerViewNotOpenToInstallAppURLMessage" = "App Storeに移動できません。カスタマーサービスまでご連絡ください。";
-
 "checkParticipate" = "参加確認";
 "participating" = "参加中";
-"checkingIsFavorite" = "「いいね！」確認中";
-
-"alreadyfavorited" = "既にファンになっている方は、この[イベント]への参加ができません。";
-
 "rewardComplete" = "報酬付与リクエストが完了しました。通信状況によっては、報酬付与に最大5分かかる場合があります。";
-
-"notYetisFavoriteComplete" = "まだ「いいね！」をしていません。「いいね！」をした後、もう一度お試しください。";
-
 "participate" = "参加する";
 "viewDetail" = "詳細を見る";
-
 "wrongURLAddress" = "URLが正しくありません。カスタマーセンターまでご連絡ください。";
-
-
 "checkInstall" = "インストール確認";
-
-"copyRecommendCode" = "クーポンコードがコピーされました。";
-
-"rewardWaiting" = "付与待機中";
-"rewardCompleted" = "付与完了";
-
 "participateListTableHeaderText" = "通信状況によっては、[イベント]参加完了から報酬付与に最大2時間かかる場合があります。";
-"csGuideText" = "ご不明な点がございましたら、こちらまでお問合せください。";
-
-"csNotiText" = "*取得した個人情報（メールアドレス）は、お客様とのご連絡及び問題解決の目的で使用し、一定期間保管した後に削除されます。";
-
 "inquiry" = "お問合せ内容";
 "receiveAReplyEmail" = "返信先メールアドレス";
 "pleaseEnterYourEmail"= "メールアドレスを入力してください。";
-
 "alertNoEmailMessage" = "返信先メールアドレスを入力してください。";
 "alertNoAskMessage" = "お問合せ内容を入力して下さい。";
-
 "alertCSAddedMessage" = "お問い合わせが受信されました。";
-
 "alertSendMailFailMessage" = "メールの送信に失敗しました。";
-
 "wrongEmailFormatMessage" = "入力されたメールアドレスが正しくありません。(例:test@test.com)";
-
 "csTypeEmailSubject" = "【お問い合わせ先 AdPopcorn]%@";
-
 "csTypeEmailMessageBody" = "返信先メールアドレス : %@\nお問い合わせ : %@";
-
-"couponCopyGuide" = "クーポンコードを長めにタップし続けるとコピーすることができます。";
-
-"couponCopiedMessage" = "%@ クーポンコードがコピーされました。";
-
-"pleaseSelectTheEventYouWantToContactTitle" = "お問い合わせ対象";
-
-"couponList" = "クーポンリスト";
-
+"pleaseSelectTheEventYouWantToContactTitle" = "対象の[イベント]を選択してください。";
 "customerService" = "カスタマーセンター";
-
 "send" = "送信";
-
-
-"adParticiateButtonText" = "[イベント]";
-"particiateHistoryButtonText" = "参加履歴";
-"promotingButtonText" = "友達招待";
-
-"promotingLinkType" = "リンク型";
-"promotingCouponType" = "クーポン型";
-
-"commonPromotingItemQuantity" = "お友達がアクセスする度 %@";
-"CPIPromotingItemQuantity" = "お友達が起動する度 %@";
-"LoginPromotingItemQuantity" = "お友達がログインする度 %@";
-"CPAPromotingItemQuantity" = "お友達が会員登録する度 %@";
-
-"invitedCount" = "招待成功：%@名";
-"earnedReward" = "合計 %@ %@ 獲得";
-
-"copy" = "コピー";
-"viewRanking" = "ランキングを見る。";
-
-"promotingPartipateMethod1" = "１．Facebook、LINEなど、SNSを使って友達に%@を紹介してください。招待メッセージはご自身で編集することができます。";
-
-"promotingPartipateMethod2LinkType" = "２．招待されたお友達が、招待メッセージにあるリンクをタップ、%@を%@すると、参加した人数分の報酬が付与されます。";
-
-
-"promotingPartipateMethod2CouponType" = "2. 招待されたお友達が招待メッセージのリンクをタップし、 %@を %@すると、招待されたお友達の人数に応じて報酬が付与されます。";
-
-
-"install&connect" = "インストール後アクセス";
-"install&execute" = "インストール後起動";
-"install&login" = "インストール後ログイン";
-"install&reg" = "インストール後会員登録";
-
-"promotingCautionMessage" = "「お友達招待」はアプリをお友達に紹介するサービスであり、ご自身のインストールは報酬の対象外となります。";
-
-
-"textCopied" = "コピーしました。";
-
-"inviteCompensation" = "お友達招待報酬";
-"rankCompensation" = "ランキング達成報酬";
-
-"isOverseaOfferMessage" = "過去にアプリをダウンロードされたことのある方は、この[イベント]に参加されても報酬は付与されません。また、ネットワーク状況によっては、報酬付与まで最大2時間かかる場合があります。続けますか？";
-
 "yes" = "はい";
 "no" = "いいえ";
-
-"howToParticipate" = "参加方法";
-
-"description" = "説明";
-
-"canNotParticipateInThisCampaignMessage" = "現在、参加できる[イベント]がありません。";
-
-"deviceNotConfiguredToSendSMSMessage" = "メッセージの送信が出来るように設定して下さい。";
-
-"shareNotiMessage" = "メッセージがコピーされました。 %@上で共有してください。";
-
-"contactUs" = "お問い合わせ";
-"privacyPolicy" = "個人情報保護";
 "pleaseCheckInTheMailSettings" = "iPhoneの設定＞メール/連絡先/カレンダー>アカウントでアカウントを設定してください。";
-
-
-"remainQuantity" = "[残り数量:%@]";
-
 "notice" = "お知らせ";
-
-"viralPromotionNoticeMessage" = "「お友達招待」にて、虚偽の事実を記載するなどにより、不正に報酬を獲得された場合、報酬の剥奪及びアカウントの登録解除をさせていただく場合があります。";
-
-"agree" = "同意する";
-"deny" = "同意しない";
-
-"contactUsMailMessage" = "adPOPcornを導入される企業様を募集しています。\n<連携に関してのお問合せ>\n*御社名 : \n*ご担当者様 : \n*ご連絡先 : \n*メールアドレス : \n**内容 : ";
-
-"contactUsAlertMessage" = "このメニューは、[イベント］提供システムの提携に関する問い合わせ専用窓口です。[イベント］参加に関するお問い合わせは「カスタマーセンター」までお願いします。「カスタマーセンター」まで移動しますか？";
-
 "install" = "インストール";
-
 "alerViewCompletedParticipateEventMessage" = "既に参加した[イベント]です。";
-
 "quitTheVideoNowMessage" = "視聴中の動画を終了すると報酬が付与されません。終了しますか？";
-
 "videoWatchAgainMessage" = "動画の再生が中断されました。再度ご覧になりますか?";
-
 "anUnknownErrorMessage" = "不明なエラーです。お客様センターにお問い合わせください。";
 "theCampaignEndedMessage" = "終了したキャンペーンです。";
-
-"couponCode" = "クーポン番号";
-
 "freeDownload" = "無料ダウンロード";
 "learnMore" = "アプリの詳細";
 
-"etcCS" = "Etc";
-
-"invite" = "招待";
-
 "idfaTrackingAlertMessage" = "「追跡型広告の制限」を設定する場合、イベントに参加することができません。\n設定→プライバシー→広告→追跡型広告の制限をOFFにしてから参加してください。";  
+"etcCS" = "Etc";
+"moreCSCheckQuestion" = "...もっと見る";
+"move" = "移動";
+
+"overseaOfferNoti" = "過去にアプリをダウンロードされたことのある方は、この[イベント]に参加されても報酬は付与されません。また、ネットワーク状況によっては、報酬付与まで最大2時間かかる場合があります。続けますか？";
+"privacyPolicy" = "個人情報保護ポリシー";
+
+"rewardHistory" = "付与履歴";
+"comingsoon" = "オープン待ち";
+"dailyCapExceed" = "締め切り";
+			
+"csFaqTitleMessage" = "お問い合わせの前に、下記項目をご確認ください！";
+"faqMessage1" = "1. 他のアプリから同じキャンペーンに参加したことはありませんか？\n";
+"faqMessage2" = "2.  キャンペーンに最後まで参加しましたか？\n";
+"faqMessage3" = "3. このアプリ、過去にインストールしたことはありませんか？\n";
+"faqMessage4" = "4. 既に報酬を受け取っていませんか？";
+			
+"csOptionTitle" = "キャンペーンに最後まで参加しましたか？\n報酬をもらっていない場合、下記内容を入力してください。";
+"name" = "お名前";
+"required" = "（必須）";
+"phoneNumber" = "連絡先";
+			
+"cs_notice1" = "必須項目が入力されていません。";
+"cs_notice2" = "＊お問い合わせについては2〜3営業日以内にはメールアドレスまで返信致します。";
+"cs_notice3" = "お問い合わせの処理は2〜3営業日ほどお時間を頂いております。";
+"cs_notice4" = "正しくない携帯情報です。";
+			
+"landingBadge" = "ランディング型";
+"clickBadge" = "クリック型";
+"cpaBadge" = "達成型";
+"registerBadge" = "会員登録型";
+"actionBadge" = "アクション型";
+"cpiBadge" = "インストール型";
+"cpeBadge" = "起動型";
+"loginBadge" = "ログイン型";
+"agreementBadge" = "規約同意型";
+"videoBadge" = "視聴型";
+"reexecuteBadge" = "再起動型";
+"dailyBadge" = "デイリーリワード型";
+"defaultBadge" = "参加型";
+			
+"date" = "日付";
+"campaignName" = "キャンペーン名";
+"reward" = "報酬";
+"rewardHistoryInfo" = "付与履歴は直近1ヶ月以内のもののみ表示します。";
+	
+"etcQuestion1" = "付与が完了したと表示されますけど、報酬が付与されていません。";
+"etcQuestion2" = "既に参加したというメッセージが出てきます。";
+"etcAnswer1" = "該当アプリのお問い合わせ先までご連絡ください。";
+"etcAnswer2" = "参加履歴から、該当キャンペーンに参加したか再度ご確認ください。";
+"directInput" = "直接入力";
+"externalCSMessage" = "このキャンペーンは、メールまたは提供社専用ページからお問い合わせください。";
+
+"noAdMessage" = "現在、参加できる[イベント]がありません。";
+"abusingMessage" = "こちらの端末からIDFAを変更した履歴が確認され、広告の参加が制限されています。詳細についてはFAQからご確認ください。";
+"goToFAQ" = "詳しい内容を確認するには、以下のボタンをタップしてください。";

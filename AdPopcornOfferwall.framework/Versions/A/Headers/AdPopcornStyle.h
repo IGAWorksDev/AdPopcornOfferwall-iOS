@@ -17,24 +17,18 @@ typedef NS_ENUM(NSInteger, AdPopcornThemeColor)
     AdPopcornThemeYellowColor = 3
 };
 
-
-
-
-
-
 @interface AdPopcornStyle : NSObject
 
 @property (nonatomic, unsafe_unretained) AdPopcornThemeColor adPopcornThemeColor;
-@property (nonatomic, unsafe_unretained) AdPopcornThemeColor adPopcornTextThemeColor;
-@property (nonatomic, unsafe_unretained) AdPopcornThemeColor adPopcornRewardThemeColor;
-@property (nonatomic, unsafe_unretained) AdPopcornThemeColor adPopcornRewardCheckThemeColor;
+@property (nonatomic, unsafe_unretained) AdPopcornThemeColor adPopcornTitleTextColor;
+@property (nonatomic, unsafe_unretained) AdPopcornThemeColor adPopcornTitleBackgroundColor;
 
 @property (nonatomic, strong) UIColor *adPopcornCustomThemeColor;
-@property (nonatomic, strong) UIColor *adPopcornCustomTextThemeColor;
-@property (nonatomic, strong) UIColor *adPopcornCustomRewardThemeColor;
-@property (nonatomic, strong) UIColor *adPopcornCustomRewardCheckThemeColor;
+@property (nonatomic, copy) NSString *adPopcornCustomOfferwallTitleLogoPath;
+@property (nonatomic, copy) NSString *adPopcornCustomOfferwallTitle;
+@property (nonatomic, strong) UIColor *adPopcornCustomOfferwallTitleColor;
+@property (nonatomic, strong) UIColor *adPopcornCustomOfferwallTitleBackgroundColor;
 
-@property (nonatomic, copy) NSString *adPopcornOfferWallTitle;
 
 + (AdPopcornStyle *)sharedInstance;
 
