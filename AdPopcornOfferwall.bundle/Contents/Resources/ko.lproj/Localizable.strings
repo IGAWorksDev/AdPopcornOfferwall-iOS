@@ -43,6 +43,7 @@
 "install" = "설치";
 "alerViewCompletedParticipateEventMessage" = "참여 완료된 이벤트입니다.";
 "quitTheVideoNowMessage" = "지금 비디오를 종료하시면 리워드가 지급되지 않습니다. 종료하시겠습니까?";
+"quitTheVideoNowMessage2" = "링크를 클릭하지 않으면 시청 완료 후에도 리워드를 받을 수 없습니다. 종료하시겠습니까?";
 "videoWatchAgainMessage" = "비디오 시청이 완료되지 않았습니다. 다시 시청하시겠습니까?";
 "anUnknownErrorMessage" = "알수 없는 오류입니다. 고객센터로 문의바랍니다.";
 "theCampaignEndedMessage" = "종료된 캠페인입니다.";
@@ -106,3 +107,5 @@
 "noAdMessage" = "참여가능한 광고가 없습니다.";
 "abusingMessage" = "사용 중이신 기기에서 IDFA를 변경한 이력이 감지되어, 애드팝콘 오퍼월 서비스 이용에 제한되었습니다.";
 "goToFAQ" = "자세한 안내를 보시려면 아래 이동 버튼을 눌러주세요.";
+
+"afterMessage" = "초 후";

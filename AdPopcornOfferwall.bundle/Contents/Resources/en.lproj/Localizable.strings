@@ -43,6 +43,7 @@
 "install" = "install";
 "alerViewCompletedParticipateEventMessage" = "Participation in the event is completed.";
 "quitTheVideoNowMessage" = "If you quit the video now, you will not recieve the reward. Are you sure you want to quit?";
+"quitTheVideoNowMessage2" = "If you don't click the link, we will not receive a reward after watching the ads. Do you want to close?";
 "videoWatchAgainMessage" = "You have not finished watching your video. Would you like to start again?";
 "anUnknownErrorMessage" = "An unknown error. Please contact the Customer Care Center.";
 "theCampaignEndedMessage" = "The campaign ended.";
@@ -105,3 +106,5 @@
 "noAdMessage" = "There are no available campaigns.";
 "abusingMessage" = "We’ve detected the changing history of IDFA on your device. You are restricted to participate adPOPcorn offerwall from now on.";
 "goToFAQ" = "Click the button below for more detail";
+
+"afterMessage" = "later";

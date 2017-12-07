@@ -42,6 +42,7 @@
 "install" = "インストール";
 "alerViewCompletedParticipateEventMessage" = "既に参加した[イベント]です。";
 "quitTheVideoNowMessage" = "視聴中の動画を終了すると報酬が付与されません。終了しますか？";
+"quitTheVideoNowMessage2" = "リンククリックを完了しない場合、リワードが付与されません。終了しますか？";
 "videoWatchAgainMessage" = "動画の再生が中断されました。再度ご覧になりますか?";
 "anUnknownErrorMessage" = "不明なエラーです。お客様センターにお問い合わせください。";
 "theCampaignEndedMessage" = "終了したキャンペーンです。";
@@ -105,3 +106,5 @@
 "noAdMessage" = "現在、参加できる[イベント]がありません。";
 "abusingMessage" = "こちらの端末からIDFAを変更した履歴が確認され、広告の参加が制限されています。詳細についてはFAQからご確認ください。";
 "goToFAQ" = "詳しい内容を確認するには、以下のボタンをタップしてください。";
+
+"afterMessage" = "秒後";
