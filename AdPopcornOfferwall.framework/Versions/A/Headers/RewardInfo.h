@@ -15,7 +15,7 @@
 @property (nonatomic, copy) NSString *itemKey;
 @property (nonatomic, copy) NSString *itemName;
 @property (nonatomic, copy) NSString *RTID;
-@property (nonatomic, unsafe_unretained) NSUInteger  quantity;
+@property (nonatomic, unsafe_unretained) long quantity;
 
 
 @end

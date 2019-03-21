@@ -1,27 +1,45 @@
 //
-//  AdPopcorn.h
-//  IgaworksAd
+//  AdPopcornOfferwall.h
+//  AdPopcornOfferwallLib
 //
-//  Created by wonje,song on 2014. 3. 26..
-//  Copyright (c) 2014년 wonje,song. All rights reserved.
+//  Created by mick on 2018. 2. 26..
+//  Copyright (c) 2018년 igaworks All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "APError.h"
 
-
 @protocol AdPopcornOfferwallDelegate;
 @protocol AdPopcornOfferwallClientRewardDelegate;
+
+typedef enum _AdPopcornOfferwallLogLevel
+{
+    /*! log off  */
+    AdPopcornOfferwallLogOff,
+    /*! only critical logging  */
+    AdPopcornOfferwallLogCritical,
+    /*! critical, error logging  */
+    AdPopcornOfferwallLogError,
+    /*! critical, error, warning logging  */
+    AdPopcornOfferwallLogWarning,
+    /*! critical, error, warning, info logging  */
+    AdPopcornOfferwallLogInfo,
+    /*! critical, error, warning, info, debug logging  */
+    AdPopcornOfferwallLogDebug,
+    /*! all logging */
+    AdPopcornOfferwallLogTrace
+} AdPopcornOfferwallLogLevel;
 
 @interface AdPopcornOfferwall : NSObject
 {
 
 }
 
-
 @property (nonatomic, weak) id<AdPopcornOfferwallDelegate> delegate;
 
+// igaworks에서 제공하는 reward server를 사용할것인지 여부.
+@property (nonatomic, unsafe_unretained) BOOL useIgaworksRewardServer;
 @property (nonatomic, weak) id<AdPopcornOfferwallClientRewardDelegate> clientRewardDelegate;
 
 /*!
@@ -29,6 +47,14 @@
  singleton AdPopcorn 객체를 반환한다.
  */
 + (AdPopcornOfferwall *)shared;
+
+/*!
+ @abstract
+ IGAWorks appkey, hashkey를 설정한다.
+ 
+ @param appkey 앱키, hashkey 해시키
+ */
++ (void)setAppKey:(NSString *)appKey andHashKey:(NSString *)hashKey;
 
 /*!
  @abstract
@@ -42,6 +68,15 @@
  @param userDataDictionaryForFilter    filtering(targeting)을 위한 user data
  */
 + (void)openOfferWallWithViewController:(UIViewController *)vController delegate:(id)delegate userDataDictionaryForFilter:(NSMutableDictionary *)userDataDictionaryForFilter;
+
+/*!
+ @abstract
+ setUseClientRewardServer
+ 
+ @discussion
+ 클라이언트 리워드 서버 사용 여부 설정
+ */
++ (void)setUseClientRewardServer:(BOOL)useIgawClientRewardServer;
 
  /*!
  @abstract
@@ -77,8 +112,35 @@
  */
 + (void)loadVideoAd:(id)delegate;
 + (void)showVideoAdWithViewController:(UIViewController *)vController delegate:(id)delegate;
-@end
 
+/*!
+ @abstract
+ 사용자의 user id를 전송하고자 할때 호출한다.
+ 
+ @param userId              user id.
+ */
++ (void)setUserId:(NSString *)userId;
+
+/*!
+ @abstract
+ 로그를 level를 설정한다.
+ 
+ @discussion
+ 보고자 하는 로그 level을 info, debug, trace으로 설정한다.
+ 
+ @param LogLevel log level
+ */
++ (void)setLogLevel:(AdPopcornOfferwallLogLevel)logLevel;
+
+/*!
+ @abstract
+ 적립 가능한 오퍼월 캠페인 수와 총 리워드 조회 API
+ 
+ @discussion
+ 적립 가능한 오퍼월 캠페인 수와 총 리워드: 조회된 결과 값은 offerwallTotalRewardInfo 에서 확인 가능
+ */
++ (void)getEarnableTotalRewardInfo:(id)delegate;
+@end
 
 @protocol AdPopcornOfferwallDelegate <NSObject>
 
@@ -172,6 +234,15 @@
  @discussion
  */
 - (void)showVideoAdFailedWithError:(APError *)error;
+
+/*!
+ @abstract
+ 조회된 오퍼월 캠페인 수와 총 리워드 정보를 전달한다.
+ 
+ @discussion
+ */
+- (void)offerwallTotalRewardInfo:(BOOL)queryResult totalCount:(NSInteger)count
+                      totalReward:(NSString *)reward;
 @end
 
 @protocol AdPopcornOfferwallClientRewardDelegate <NSObject>
@@ -185,8 +256,8 @@
  @discussion
  사용자에게 아이템을 지급하고, 지급이 완료되면 didGiveRewardItemWithRewardKey 메소드를 호출하여 지급 완료 확정 처리를 한다.
  */
-- (void)onRewardRequestResult:(BOOL)isSuccess withMessage:(NSString *)message itemName:(NSString *)itemName itemKey:(NSString *)itemKey campaignName:(NSString *)campaignName campaignKey:(NSString *)campaignKey rewardKey:(NSString *)rewardKey quantity:(NSInteger)quantity;
-
+//- (void)onRewardRequestResult:(BOOL)isSuccess withMessage:(NSString *)message itemName:(NSString *)itemName itemKey:(NSString *)itemKey campaignName:(NSString *)campaignName campaignKey:(NSString *)campaignKey rewardKey:(NSString *)rewardKey quantity:(NSInteger)quantity;
+- (void)onRewardRequestResult:(BOOL)isSuccess withMessage:(NSString *)message campaignKey:(NSString *)campaignKey campaignName:(NSString *)campaignName quantity:(long)quantity cv:(NSString *)cv rewardKey:(NSString *)rewardKey;
 
 /*!
  @abstract

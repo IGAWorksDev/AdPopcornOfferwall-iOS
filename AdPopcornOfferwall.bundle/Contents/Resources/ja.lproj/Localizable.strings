@@ -108,8 +108,8 @@
 "goToFAQ" = "詳しい内容を確認するには、以下のボタンをタップしてください。";
 
 "afterMessage" = "秒後";
-"privacyPolicyTitle" = "개인정보 수집 동의";
-"privacyPolicyMessage" = "\n애드팝콘 오퍼월 이용을 위해서는\nIDFA(광고식별자) 수집에 대한 동의가 필요합니다.서비스 이용을 위한 필수 정보이므로\n동의를 거부하실 경우 애드팝콘 오퍼월을\n이용하실 수 없습니다.";
-"agree" = "동의";
-"deny" = "거부";
+"privacyPolicyTitle" = "個人情報取得に関する同意";
+"privacyPolicyMessage" = "AdPopcorn Offerwallを利用するためには,\nIDFA(広告識別子)の収集に対する同意が必要です。サービス利用のための必須情報であるため,\n同意を拒否される場合,AdPopcorn Offerwallが\n利用できません。";
+"agree" = "同意";
+"deny" = "拒否";
 
