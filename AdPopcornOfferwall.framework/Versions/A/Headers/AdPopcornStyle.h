@@ -28,6 +28,7 @@ typedef NS_ENUM(NSInteger, AdPopcornThemeColor)
 @property (nonatomic, copy) NSString *adPopcornCustomOfferwallTitle;
 @property (nonatomic, strong) UIColor *adPopcornCustomOfferwallTitleColor;
 @property (nonatomic, strong) UIColor *adPopcornCustomOfferwallTitleBackgroundColor;
+@property (nonatomic, strong) UIColor *adPopcornCustomOfferwallNavigationBtnColor;
 
 
 + (AdPopcornStyle *)sharedInstance;
