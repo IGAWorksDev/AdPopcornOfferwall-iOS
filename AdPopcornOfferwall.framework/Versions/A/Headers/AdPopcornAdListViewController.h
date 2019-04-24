@@ -48,6 +48,7 @@ typedef enum _presentedViewType
 - (void)setViewModeWidthSize:(CGFloat)viewWidth;
 - (void)setViewModeHeightSize:(CGFloat)viewHeight;
 - (void)setViewModeImpression;
+- (void)setViewModeTopMargin:(CGFloat)topHeight;
 
 @end
 

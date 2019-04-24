@@ -140,6 +140,15 @@ typedef enum _AdPopcornOfferwallLogLevel
  적립 가능한 오퍼월 캠페인 수와 총 리워드: 조회된 결과 값은 offerwallTotalRewardInfo 에서 확인 가능
  */
 + (void)getEarnableTotalRewardInfo:(id)delegate;
+
+/*!
+ @abstract
+ 캠페인 키를 이용 참여 시도 API
+ 
+ @discussion
+ 캠페인 키를 이용 해 SDK에서 대신 참여 시도 처리
+ */
++ (void)tryParticipateCampaign:(NSString *)campaignKey andDelegate:(id)delegate;
 @end
 
 @protocol AdPopcornOfferwallDelegate <NSObject>
@@ -243,6 +252,15 @@ typedef enum _AdPopcornOfferwallLogLevel
  */
 - (void)offerwallTotalRewardInfo:(BOOL)queryResult totalCount:(NSInteger)count
                       totalReward:(NSString *)reward;
+
+/*!
+ @abstract
+ tryParticipateCampaign 결과 값을 전달한다.
+ 
+ @discussion
+ */
+- (void)onParticipateResult:(BOOL)result resultCode:(NSInteger)resultCode
+              resultMessage:(NSString *)resultMessage landingURL:(NSString*)landingURL;
 @end
 
 @protocol AdPopcornOfferwallClientRewardDelegate <NSObject>
