@@ -143,12 +143,21 @@ typedef enum _AdPopcornOfferwallLogLevel
 
 /*!
  @abstract
+ 수동으로 고객센터 open api
+ 
+ @discussion
+ 오퍼월 접근을 통하지 않고 고객센터를 open 한다.
+ */
++ (void)openCSViewController:(UIViewController *)vController userId:(NSString *)userId;
+
+/*!
+ @abstract
  캠페인 키를 이용 참여 시도 API
  
  @discussion
  캠페인 키를 이용 해 SDK에서 대신 참여 시도 처리
  */
-+ (void)tryParticipateCampaign:(NSString *)campaignKey andDelegate:(id)delegate;
++ (void)tryParticipateCampaign:(NSString *)campaignKey;
 @end
 
 @protocol AdPopcornOfferwallDelegate <NSObject>
