@@ -113,3 +113,35 @@
 "agree" = "同意";
 "deny" = "拒否";
 
+"tossCampaignDetailInfo" = "⁃ 참여하신 이벤트에 따라 토스머니 지급이 잠시 지연될 수 있습니다.\n⁃ 과거 설치한 앱이거나 광고물량이 조기에 소진된 경우, 지급이 불가능할 수 있습니다.\n⁃ 3G/4G 이용시 데이터이용 요금이 발생할 수 있습니다."
+"tossOfferTitle" = "토스 행운미션";
+"tossDetailTitle" = "토스 행운퀴즈";
+"tossFAQ" = "안내";
+
+"tossAppInstall" = "앱설치하고";
+"tossAppExecute" = "앱실행하고";
+"tossCommon" = "미션참여하고";
+"receive" = "받기";
+
+"tossCSFaqTitleMessage" = "문의 전에 확인해보세요!";
+"tossCSCampaignTitle" = "문의 리스트";
+
+"etcQuestion3" = "개인정보 수집을 해제하고 싶어요.";
+
+"userConsentTitle" = "개인정보 수집 동의";
+"userConsentSmallTitle" = "애드팝콘은 광고 참여 정보 확인 및 리워드 제공을 위하여 아래의 정보를 수집 및 이용하고 있습니다.";
+"userConsentSubTitle1" = "수집하는 개인정보의 항목";
+"userConsentSubMessage1" = "IDFA";
+"userConsentSubTitle2" = "개인정보의 보유 및 이용기간";
+"userConsentSubMessage2" = "정보 수집 및 이용 목적이 달성된후 지체 없이 파기합니다.";
+"userConsentSubTitle3" = "개인정보 수집 동의 거부";
+"userConsentSubMessage3" = "개인 정보 수집 동의를 거부할 수 있으며, 미동의 시 서비스 이용이 제한됩니다.";
+"userConsentAcceptButton" = "동의합니다";
+
+"cancelUserConsent" = "개인정보 수집을 해제하면 더 이상 애드팝콘 서비스를 사용하실 수 없습니다.그래도 진행하시겠습니까?";
+"totalRewardSummaryInfo" = "모든 미션을 달성하면 ⛳️\n총 ";
+
+"allCampaignTab" = "전체";
+"installCampaignTab" = "앱설치";
+"executeCampaignTab" = "앱실행";
+"etcCampaignTab" = "미션참여";
