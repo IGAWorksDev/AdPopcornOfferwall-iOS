@@ -147,3 +147,7 @@
 "executeCampaignTab" = "앱실행";
 "etcCampaignTab" = "미션참여";
 
+"ios14IdfaTrackingEnable" = "'광고 추적 제한' 설정시 광고 참여가 제한됩니다.\n설정 -> 개인정보 보호 -> 추적 메뉴에서 해당 앱의 추적을 허용해 주세요";
+
+"easyBadge" = "간편참여";
+"bigRewardBadge" = "큰혜택";
