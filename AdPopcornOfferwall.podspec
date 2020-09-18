@@ -7,7 +7,7 @@ s.homepage     = "https://github.com/IGAWorksDev/AdPopcornOfferwall-iOS"
 s.license      = {
 :type => 'Commercial',
 :text => <<-LICENSE
-All text and design is copyright 2006-2015 igaworks, Inc.
+All text and design is copyright 2006-2020 igaworks, Inc.
 
 All rights reserved.
 
@@ -16,11 +16,11 @@ LICENSE
 }
 
 s.platform = :ios, '8.0'
-s.author       = { "wonje,song" => "ricky@igaworks.com" }
+s.author       = { "mick" => "mick@igaworks.com" }
 s.source       = { :git => "https://github.com/IGAWorksDev/AdPopcornOfferwall-iOS.git", :tag => "#{s.version}" }
 s.resources = "AdPopcornOfferwall.bundle"
 s.ios.vendored_frameworks = 'AdPopcornOfferwall.framework'
-s.frameworks = 'ImageIO', 'MessageUI', 'SafariServices', 'MediaPlayer', 'AdSupport', 'AVKit', 'AVFoundation', 'CoreMedia', 'WebKit', 'MessageUI', 'Security', 'CoreTelephony', 'SystemConfiguration', 'AppTrackingTransparency'
+s.frameworks = 'ImageIO', 'MessageUI', 'SafariServices', 'MediaPlayer', 'AdSupport', 'AVKit', 'AVFoundation', 'CoreMedia', 'WebKit', 'MessageUI', 'Security', 'CoreTelephony', 'SystemConfiguration', 'QuartzCore', 'UIKit'
 s.libraries = 'xml2'
 s.xcconfig     = { 'HEADER_SEARCH_PATHS' => '"$(SDKROOT)/usr/include/libxml2"' }
 end
