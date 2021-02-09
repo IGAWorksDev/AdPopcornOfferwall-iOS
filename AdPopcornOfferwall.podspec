@@ -23,4 +23,8 @@ s.ios.vendored_frameworks = 'AdPopcornOfferwall.framework'
 s.frameworks = 'ImageIO', 'MessageUI', 'SafariServices', 'MediaPlayer', 'AdSupport', 'AVKit', 'AVFoundation', 'CoreMedia', 'WebKit', 'MessageUI', 'Security', 'CoreTelephony', 'SystemConfiguration', 'QuartzCore', 'UIKit', 'AppTrackingTransparency'
 s.libraries = 'xml2'
 s.xcconfig     = { 'HEADER_SEARCH_PATHS' => '"$(SDKROOT)/usr/include/libxml2"' }
+s.pod_target_xcconfig = {
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+}
+s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 end
