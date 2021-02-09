@@ -15,7 +15,7 @@ https://github.com/IGAWorksDev/AdPopcornOfferwall-iOS
 LICENSE
 }
 
-s.platform = :ios, '8.0'
+s.platform = :ios, '9.0'
 s.author       = { "mick" => "mick@igaworks.com" }
 s.source       = { :git => "https://github.com/IGAWorksDev/AdPopcornOfferwall-iOS.git", :tag => "#{s.version}" }
 s.resources = "AdPopcornOfferwall.bundle"
