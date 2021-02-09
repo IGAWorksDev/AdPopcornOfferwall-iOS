@@ -67,7 +67,6 @@ typedef enum _presentedViewType
 - (void)tryToGetRewardItem;
 - (void)closePopoverView;
 - (void)closeHelpPopoverView;
-- (void)refreshRequestAdList;
 - (void)interfaceOrientationDidChanged:(UIInterfaceOrientation)toInterfaceOrientation;
 
 // video ad
