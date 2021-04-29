@@ -109,8 +109,8 @@
 "goToFAQ" = "자세한 안내를 보시려면 아래 이동 버튼을 눌러주세요.";
 
 "afterMessage" = "초 후";
-"privacyPolicyTitle" = "개인정보 수집 동의";
-"privacyPolicyMessage" = "\n애드팝콘 오퍼월 이용을 위해서는\nIDFA(광고식별자) 수집에 대한 동의가 필요합니다.서비스 이용을 위한 필수 정보이므로\n동의를 거부하실 경우 애드팝콘 오퍼월을\n이용하실 수 없습니다.";
+"privacyPolicyTitle" = "광고 식별자 수집 동의";
+"privacyPolicyMessage" = "\n애드팝콘 오퍼월 서비스 사용을 위해서는\n광고식별자 수집에 대한 동의가 필요합니다.";
 "agree" = "동의";
 "deny" = "거부";
 
@@ -152,3 +152,7 @@
 "easyBadge" = "간편참여";
 "bigRewardBadge" = "큰혜택";
 "ios14ParticipateAlertMessage" = "앱 설치 및 실행 후 ‘사용자 추적 허용’을 반드시 해주셔야 정상적으로 리워드가 지급됩니다.";
+
+"csPrivacyDesc" = "• 수집항목 : 이름, 핸드폰번호, 이메일\n• 수집목적 : 문의 내역 확인과 답변처리\n• 활용기간 : 3년 보관 후 파기\n• 고객님은 동의를 거부할 수 있으며, 동의 거부시 고객센터를 이용할 수 없습니다.";
+"csConsentPrivacy" = "개인정보 수집에 동의합니다.";
+"csNeedConsentPrivacy" = "개인정보 수집에 동의해주세요.";
