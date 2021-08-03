@@ -69,8 +69,6 @@ typedef enum _AdPopcornOfferwallLogLevel
  */
 + (void)openOfferWallWithViewController:(UIViewController *)vController delegate:(id)delegate userDataDictionaryForFilter:(NSMutableDictionary *)userDataDictionaryForFilter;
 
-+ (void)openTossOfferWallWithViewController:(UIViewController *)vController delegate:(id)delegate userDataDictionaryForFilter:(NSMutableDictionary *)userDataDictionaryForFilter;
-
 /*!
  @abstract
  setUseClientRewardServer
@@ -170,14 +168,6 @@ typedef enum _AdPopcornOfferwallLogLevel
 */
 + (void)openCampaignPage:(UIViewController *)vController campaignKey:(NSString *)campaignKey;
 
-/*!
-@abstract
-캠페인 키를 이용하여 토스 전용 상세 페이지 오픈 API
-
-@discussion
-캠페인 키를 이용 해 특정 캠페인 상세 페이지에 바로 접근한다.
-*/
-+ (void)openTossCampaignPage:(UIViewController *)vController campaignKey:(NSString *)campaignKey;
 @end
 
 @protocol AdPopcornOfferwallDelegate <NSObject>

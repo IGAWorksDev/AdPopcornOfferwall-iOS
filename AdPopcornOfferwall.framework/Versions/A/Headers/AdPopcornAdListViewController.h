@@ -40,14 +40,11 @@ typedef enum _presentedViewType
     
     UIView *_footerViewForContactUs, *_landscapeFooterViewForContactUs;
     UIView *_IpadFooterViewForContactUs;
-    
-    UIView *_tossFooterFixedView;
+
 }
 
 @property (nonatomic, strong) NSMutableDictionary *userDataDictionaryForFilter;
 @property (nonatomic, weak) id<AdListViewControllerDelegate> adListViewControllerDelegate;
-
-@property (nonatomic, unsafe_unretained) BOOL tossAppMode;
 
 - (void)playVideo:(NSString *)videoSource;
 - (void)adjustOrientation:(UIInterfaceOrientation)toInterfaceOrientation;
@@ -58,6 +55,7 @@ typedef enum _presentedViewType
 - (void)setViewModeImpression;
 - (void)setViewModeTopMargin:(CGFloat)topHeight;
 - (void)setViewModeDetailTitleHidden:(BOOL)hidden;
+- (void)setViewModeCustomNavigationBar:(BOOL)useViewModeCustomNavigationBar;
 
 @end
 
@@ -72,7 +70,6 @@ typedef enum _presentedViewType
 // video ad
 - (void)closePopoverViewWithPlayVideo:(NSString *)videoSource;
 - (void)closeVideoViewForIpad;
-
 - (void)exitOfferwall;
 
 @end
