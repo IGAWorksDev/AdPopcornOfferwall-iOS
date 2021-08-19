@@ -31,11 +31,6 @@ typedef enum _presentedViewType
     NSMutableArray *_landscapeAdCampaignList;
     NSMutableArray *_landscapeSpecialAreaCampaginList;
     
-    NSMutableArray *_allCampaignList;
-    NSMutableArray *_installCampaignList;
-    NSMutableArray *_executeCampaignList;
-    NSMutableArray *_etcCampaignList;
-    
     UIInterfaceOrientation _orientation;
     
     UIView *_footerViewForContactUs, *_landscapeFooterViewForContactUs;
