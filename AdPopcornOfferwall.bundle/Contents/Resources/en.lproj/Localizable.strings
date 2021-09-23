@@ -95,6 +95,8 @@
 "campaignName" = "Campaign";
 "reward" = "Reward";
 "rewardHistoryInfo" = "You can see only recent 1 month history for Reward.";
+"noRewardHistoryInfo" = "There is no reward historys.";
+
 "etcQuestion1" = "I haven't received any reward even status is \"Completed\".";
 "etcQuestion2" = "\"You already particiated.\" message keeps pop-up. ";
 "etcAnswer1" = "Please contact Customer Service of selected app.";

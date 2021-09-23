@@ -95,6 +95,7 @@
 "campaignName" = "キャンペーン名";
 "reward" = "報酬";
 "rewardHistoryInfo" = "付与履歴は直近1ヶ月以内のもののみ表示します。";
+"noRewardHistoryInfo" = "支払い履歴がありません。";
 	
 "etcQuestion1" = "付与が完了したと表示されますけど、報酬が付与されていません。";
 "etcQuestion2" = "既に参加したというメッセージが出てきます。";
