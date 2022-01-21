@@ -1,0 +1,154 @@
+/*
+ Localizable.strings
+ AdPOPcornSDKRevision
+ 
+ Created by wonje,song on 13. 2. 5..
+ Copyright (c) 2013년 wonje,song. All rights reserved.
+ */
+"offerWallTopBarTitle" = "[イベント]";
+"alertViewTitle" = "アドポップコーン";
+"alertViewGeneralErrorMessage" = "サーバへのアクセスが集中しています。\nしばらくしてから、もう一度お試しください。";
+"alertViewAlreadyParticipatedCampaignErrorMessage" = "既に参加した[イベント]です。";
+"confirm" = "確認";
+"close" = "閉じる";
+"alerViewAlreadyInstalledAppMessage" = "このアプリは既にインストールされています。";
+"alerViewNotYetInstalledMessage" = "まだアプリがインストールされていません。インストールページに移動しますか？";
+"alerViewNotOpenToInstallAppURLMessage" = "App Storeに移動できません。カスタマーサービスまでご連絡ください。";
+"checkParticipate" = "参加確認";
+"participating" = "参加中";
+"rewardComplete" = "報酬付与リクエストが完了しました。通信状況によっては、報酬付与に最大5分かかる場合があります。";
+"participate" = "参加する";
+"viewDetail" = "詳細を見る";
+"wrongURLAddress" = "URLが正しくありません。カスタマーセンターまでご連絡ください。";
+"checkInstall" = "インストール確認";
+"participateListTableHeaderText" = "通信状況によっては、[イベント]参加完了から報酬付与に最大2時間かかる場合があります。";
+"inquiry" = "お問合せ内容";
+"receiveAReplyEmail" = "返信先メールアドレス";
+"pleaseEnterYourEmail"= "メールアドレスを入力してください。";
+"alertNoEmailMessage" = "返信先メールアドレスを入力してください。";
+"alertNoAskMessage" = "お問合せ内容を入力して下さい。";
+"alertCSAddedMessage" = "お問い合わせが受信されました。";
+"alertSendMailFailMessage" = "メールの送信に失敗しました。";
+"wrongEmailFormatMessage" = "入力されたメールアドレスが正しくありません。(例:test@test.com)";
+"csTypeEmailSubject" = "【お問い合わせ先 AdPopcorn]%@";
+"csTypeEmailMessageBody" = "返信先メールアドレス : %@\nお問い合わせ : %@";
+"pleaseSelectTheEventYouWantToContactTitle" = "対象の[イベント]を選択してください。";
+"customerService" = "カスタマーセンター";
+"send" = "送信";
+"yes" = "はい";
+"no" = "いいえ";
+"pleaseCheckInTheMailSettings" = "iPhoneの設定＞メール/連絡先/カレンダー>アカウントでアカウントを設定してください。";
+"notice" = "お知らせ";
+"install" = "インストール";
+"alerViewCompletedParticipateEventMessage" = "既に参加した[イベント]です。";
+"quitTheVideoNowMessage" = "視聴中の動画を終了すると報酬が付与されません。終了しますか？";
+"quitTheVideoNowMessage2" = "リンククリックを完了しない場合、リワードが付与されません。終了しますか？";
+"videoWatchAgainMessage" = "動画の再生が中断されました。再度ご覧になりますか?";
+"anUnknownErrorMessage" = "不明なエラーです。お客様センターにお問い合わせください。";
+"theCampaignEndedMessage" = "終了したキャンペーンです。";
+"freeDownload" = "無料ダウンロード";
+"learnMore" = "アプリの詳細";
+
+"idfaTrackingAlertMessage" = "「追跡型広告の制限」を設定する場合、イベントに参加することができません。\n設定→プライバシー→広告→追跡型広告の制限をOFFにしてから参加してください。";  
+"etcCS" = "Etc";
+"moreCSCheckQuestion" = "...もっと見る";
+"move" = "移動";
+
+"overseaOfferNoti" = "過去にアプリをダウンロードされたことのある方は、この[イベント]に参加されても報酬は付与されません。また、ネットワーク状況によっては、報酬付与まで最大2時間かかる場合があります。続けますか？";
+"privacyPolicy" = "個人情報保護ポリシー";
+
+"rewardHistory" = "付与履歴";
+"comingsoon" = "オープン待ち";
+"dailyCapExceed" = "締め切り";
+			
+"csFaqTitleMessage" = "お問い合わせの前に、下記項目をご確認ください！";
+"faqMessage1" = "1. 他のアプリから同じキャンペーンに参加したことはありませんか？\n";
+"faqMessage2" = "2.  キャンペーンに最後まで参加しましたか？\n";
+"faqMessage3" = "3. このアプリ、過去にインストールしたことはありませんか？\n";
+"faqMessage4" = "4. 既に報酬を受け取っていませんか？";
+			
+"csOptionTitle" = "キャンペーンに最後まで参加しましたか？\n報酬をもらっていない場合、下記内容を入力してください。";
+"name" = "お名前";
+"required" = "（必須）";
+"phoneNumber" = "連絡先";
+			
+"cs_notice1" = "必須項目が入力されていません。";
+"cs_notice2" = "＊お問い合わせについては2〜3営業日以内にはメールアドレスまで返信致します。";
+"cs_notice3" = "お問い合わせの処理は2〜3営業日ほどお時間を頂いております。";
+"cs_notice4" = "正しくない携帯情報です。";
+			
+"landingBadge" = "ランディング型";
+"clickBadge" = "クリック型";
+"cpaBadge" = "達成型";
+"registerBadge" = "会員登録型";
+"actionBadge" = "アクション型";
+"cpiBadge" = "インストール型";
+"cpeBadge" = "起動型";
+"loginBadge" = "ログイン型";
+"agreementBadge" = "規約同意型";
+"videoBadge" = "視聴型";
+"reexecuteBadge" = "再起動型";
+"dailyBadge" = "デイリーリワード型";
+"defaultBadge" = "参加型";
+			
+"date" = "日付";
+"campaignName" = "キャンペーン名";
+"reward" = "報酬";
+"rewardHistoryInfo" = "付与履歴は直近1ヶ月以内のもののみ表示します。";
+"noRewardHistoryInfo" = "支払い履歴がありません。";
+	
+"etcQuestion1" = "付与が完了したと表示されますけど、報酬が付与されていません。";
+"etcQuestion2" = "既に参加したというメッセージが出てきます。";
+"etcAnswer1" = "該当アプリのお問い合わせ先までご連絡ください。";
+"etcAnswer2" = "参加履歴から、該当キャンペーンに参加したか再度ご確認ください。";
+"directInput" = "直接入力";
+"externalCSMessage" = "このキャンペーンは、メールまたは提供社専用ページからお問い合わせください。";
+
+"noAdMessage" = "現在、参加できる[イベント]がありません。";
+"abusingMessage" = "こちらの端末からIDFAを変更した履歴が確認され、広告の参加が制限されています。詳細についてはFAQからご確認ください。";
+"goToFAQ" = "詳しい内容を確認するには、以下のボタンをタップしてください。";
+
+"afterMessage" = "秒後";
+"privacyPolicyTitle" = "個人情報取得に関する同意";
+"privacyPolicyMessage" = "AdPopcorn Offerwallを利用するためには,\nIDFA(広告識別子)の収集に対する同意が必要です。サービス利用のための必須情報であるため,\n同意を拒否される場合,AdPopcorn Offerwallが\n利用できません。";
+"agree" = "同意";
+"deny" = "拒否";
+
+"tossCampaignDetailInfo" = "⁃ 참여하신 이벤트에 따라 토스머니 지급이 잠시 지연될 수 있습니다.\n⁃ 과거 설치한 앱이거나 광고물량이 조기에 소진된 경우, 지급이 불가능할 수 있습니다.\n⁃ 3G/4G 이용시 데이터이용 요금이 발생할 수 있습니다."
+"tossOfferTitle" = "토스 행운미션";
+"tossDetailTitle" = "토스 행운퀴즈";
+"tossFAQ" = "안내";
+
+"tossAppInstall" = "앱설치하고";
+"tossAppExecute" = "앱실행하고";
+"tossCommon" = "미션참여하고";
+"receive" = "받기";
+
+"tossCSFaqTitleMessage" = "문의 전에 확인해보세요!";
+"tossCSCampaignTitle" = "문의 리스트";
+
+"etcQuestion3" = "개인정보 수집을 해제하고 싶어요.";
+
+"userConsentTitle" = "개인정보 수집 동의";
+"userConsentSmallTitle" = "애드팝콘은 광고 참여 정보 확인 및 리워드 제공을 위하여 아래의 정보를 수집 및 이용하고 있습니다.";
+"userConsentSubTitle1" = "수집하는 개인정보의 항목";
+"userConsentSubMessage1" = "IDFA";
+"userConsentSubTitle2" = "개인정보의 보유 및 이용기간";
+"userConsentSubMessage2" = "정보 수집 및 이용 목적이 달성된후 지체 없이 파기합니다.";
+"userConsentSubTitle3" = "개인정보 수집 동의 거부";
+"userConsentSubMessage3" = "개인 정보 수집 동의를 거부할 수 있으며, 미동의 시 서비스 이용이 제한됩니다.";
+"userConsentAcceptButton" = "동의합니다";
+
+"cancelUserConsent" = "개인정보 수집을 해제하면 더 이상 애드팝콘 서비스를 사용하실 수 없습니다.그래도 진행하시겠습니까?";
+"totalRewardSummaryInfo" = "모든 미션을 달성하면 ⛳️\n총 ";
+
+"allCampaignTab" = "전체";
+"installCampaignTab" = "앱설치";
+"executeCampaignTab" = "앱실행";
+"etcCampaignTab" = "미션참여";
+
+"ios14IdfaTrackingAlertMessage" = "'광고 추적 제한' 설정시 광고 참여가 제한됩니다.\n설정 -> 개인정보 보호 -> 추적 메뉴에서 해당 앱의 추적을 허용해 주십시오";
+
+"easyBadge" = "간편참여";
+"bigRewardBadge" = "큰혜택";
+"ios14ParticipateAlertMessage" = "앱 설치 및 실행 후 ‘사용자 추적 허용’을 반드시 해주셔야 정상적으로 리워드가 지급됩니다.";
