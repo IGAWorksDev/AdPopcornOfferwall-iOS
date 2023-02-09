@@ -52,7 +52,8 @@ typedef enum _AdPopcornOfferwallLogLevel
  @abstract
  IGAWorks appkey, hashkey를 설정한다.
  
- @param appkey 앱키, hashkey 해시키
+ @param appKey 앱키
+ @param hashKey 해시키
  */
 + (void)setAppKey:(NSString *)appKey andHashKey:(NSString *)hashKey;
 
@@ -68,6 +69,18 @@ typedef enum _AdPopcornOfferwallLogLevel
  @param userDataDictionaryForFilter    filtering(targeting)을 위한 user data
  */
 + (void)openOfferWallWithViewController:(UIViewController *)vController delegate:(id)delegate userDataDictionaryForFilter:(NSMutableDictionary *)userDataDictionaryForFilter;
+
+/*!
+ @abstract
+ Open CPM offerwall.
+ 
+ @discussion
+ 리스트 형태의 광고를 노출한다.
+ 
+ @param vController          광고 리스트를 노출시킬 view controller
+ @param delegate             AdPopcornDelegate
+ */
++ (void)openCPMOfferWallWithViewController:(UIViewController *)vController delegate:(id)delegate;
 
 /*!
  @abstract
@@ -99,20 +112,6 @@ typedef enum _AdPopcornOfferwallLogLevel
  */
 + (void)didGiveRewardItemWithRewardKey:(NSString *)rewardKey;
 
-
-/*!
- @abstract
- loadVideoAd.
- 
- @discussion
- 비디오 광고를 요청한다.
- 
- @param vController          비디오를 노출시킬 view controller
- @param delegate             AdPopcornDelegate
- */
-+ (void)loadVideoAd:(id)delegate;
-+ (void)showVideoAdWithViewController:(UIViewController *)vController delegate:(id)delegate;
-
 /*!
  @abstract
  사용자의 user id를 전송하고자 할때 호출한다.
@@ -128,7 +127,7 @@ typedef enum _AdPopcornOfferwallLogLevel
  @discussion
  보고자 하는 로그 level을 info, debug, trace으로 설정한다.
  
- @param LogLevel log level
+ @param logLevel log level
  */
 + (void)setLogLevel:(AdPopcornOfferwallLogLevel)logLevel;
 
@@ -177,16 +176,12 @@ typedef enum _AdPopcornOfferwallLogLevel
 /*!
  @abstract
  offerwall 리스트가 열리기 전에 호출된다.
- 
- @discussion
  */
 - (void)willOpenOfferWall;
 
 /*!
  @abstract
  offerwall 리스트가 열린직 후 호출된다.
- 
- @discussion
  */
 - (void)didOpenOfferWall;
 
@@ -194,80 +189,18 @@ typedef enum _AdPopcornOfferwallLogLevel
 /*!
  @abstract
  offerwall 리스트가 닫히기 전에 호출된다.
- 
- @discussion
  */
 - (void)willCloseOfferWall;
 
 /*!
  @abstract
  offerwall 리스트가 닫힌직 후 호출된다.
- 
- @discussion
  */
 - (void)didCloseOfferWall;
 
 /*!
  @abstract
- video 광고 로드에 성공한 경우 호출된다.
- @discussion
- */
-- (void)loadVideoAdSuccess;
-
-/*!
- @abstract
- video 광고 로드에 실패한 경우 호출된다.
- 
- @discussion
- */
-- (void)loadVideoAdFailedWithError:(APError *)error;
-
-/*!
- @abstract
- video 광고가 열리기 전에 호출된다.
- 
- @discussion
- */
-- (void)willOpenVideoAd;
-
-/*!
- @abstract
- video 광고가 열린직 후 호출된다.
- 
- @discussion
- */
-- (void)didOpenVideoAd;
-
-
-/*!
- @abstract
- video 광고가 닫히기 전에 호출된다.
- 
- @discussion
- */
-- (void)willCloseVideoAd;
-
-/*!
- @abstract
- video 광고가 닫힌직 후 호출된다.
- 
- @discussion
- */
-- (void)didCloseVideoAd;
-
-/*!
- @abstract
- reward video 광고 참여 시도에 실패 했을때 호출된다.
- 
- @discussion
- */
-- (void)showVideoAdFailedWithError:(APError *)error;
-
-/*!
- @abstract
  조회된 오퍼월 캠페인 수와 총 리워드 정보를 전달한다.
- 
- @discussion
  */
 - (void)offerwallTotalRewardInfo:(BOOL)queryResult totalCount:(NSInteger)count
                       totalReward:(NSString *)reward;
@@ -275,8 +208,6 @@ typedef enum _AdPopcornOfferwallLogLevel
 /*!
  @abstract
  tryParticipateCampaign 결과 값을 전달한다.
- 
- @discussion
  */
 - (void)onParticipateResult:(BOOL)result resultCode:(NSInteger)resultCode
               resultMessage:(NSString *)resultMessage landingURL:(NSString*)landingURL;
@@ -297,7 +228,6 @@ typedef enum _AdPopcornOfferwallLogLevel
  @discussion
  사용자에게 아이템을 지급하고, 지급이 완료되면 didGiveRewardItemWithRewardKey 메소드를 호출하여 지급 완료 확정 처리를 한다.
  */
-//- (void)onRewardRequestResult:(BOOL)isSuccess withMessage:(NSString *)message itemName:(NSString *)itemName itemKey:(NSString *)itemKey campaignName:(NSString *)campaignName campaignKey:(NSString *)campaignKey rewardKey:(NSString *)rewardKey quantity:(NSInteger)quantity;
 - (void)onRewardRequestResult:(BOOL)isSuccess withMessage:(NSString *)message campaignKey:(NSString *)campaignKey campaignName:(NSString *)campaignName quantity:(long)quantity cv:(NSString *)cv rewardKey:(NSString *)rewardKey;
 
 /*!

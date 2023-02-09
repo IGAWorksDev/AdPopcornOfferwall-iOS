@@ -18,39 +18,17 @@ typedef enum _presentedViewType
 
 @interface AdPopcornAdListViewController : UIViewController
 {
-    NSString *_redirectUrl;
-    NSIndexPath *_selectedIndexPath;
-    UITapGestureRecognizer *_tapGestureRecognizer;
-    
-    int _pageIdx, _scheduleTypeCampaignCount;
-    
-    NSMutableArray *_adCampaignList;
-    NSMutableArray *_scheduleCampaignList;
-    NSMutableArray *_indexPathsForMoveArray;
-    NSMutableArray *_specialOfferArray;
-    NSMutableArray *_landscapeAdCampaignList;
-    NSMutableArray *_landscapeSpecialAreaCampaginList;
-    
-    UIInterfaceOrientation _orientation;
-    
-    UIView *_footerViewForContactUs, *_landscapeFooterViewForContactUs;
-    UIView *_IpadFooterViewForContactUs;
-
 }
 
 @property (nonatomic, strong) NSMutableDictionary *userDataDictionaryForFilter;
 @property (nonatomic, weak) id<AdListViewControllerDelegate> adListViewControllerDelegate;
+@property (nonatomic, unsafe_unretained) BOOL isCPMMode;
 
-- (void)playVideo:(NSString *)videoSource;
 - (void)adjustOrientation:(UIInterfaceOrientation)toInterfaceOrientation;
-- (void)sendCompleteRequest:(BOOL)onVideoComplete;
-
+- (void)setViewMode:(BOOL)flag hiddenSplashScreen:(BOOL)hidden;
 - (void)setViewModeWidthSize:(CGFloat)viewWidth;
 - (void)setViewModeHeightSize:(CGFloat)viewHeight;
 - (void)setViewModeImpression;
-- (void)setViewModeTopMargin:(CGFloat)topHeight;
-- (void)setViewModeDetailTitleHidden:(BOOL)hidden;
-- (void)setViewModeCustomNavigationBar:(BOOL)useViewModeCustomNavigationBar;
 
 @end
 
@@ -58,13 +36,9 @@ typedef enum _presentedViewType
 
 @optional
 - (void)tryToGetRewardItem;
-- (void)closePopoverView;
-- (void)closeHelpPopoverView;
 - (void)interfaceOrientationDidChanged:(UIInterfaceOrientation)toInterfaceOrientation;
-
-// video ad
-- (void)closePopoverViewWithPlayVideo:(NSString *)videoSource;
-- (void)closeVideoViewForIpad;
 - (void)exitOfferwall;
-
+- (void)handleClickTab:(UIGestureRecognizer *)recognizer;
+- (void)handleClickSubTab:(UIGestureRecognizer *)recognizer;
+- (void)completeNewsCampaign:(NSString *)auth;
 @end
