@@ -25,7 +25,7 @@ typedef enum _presentedViewType
 @property (nonatomic, unsafe_unretained) BOOL isCPMMode;
 
 - (void)adjustOrientation:(UIInterfaceOrientation)toInterfaceOrientation;
-- (void)setViewMode:(BOOL)flag hiddenSplashScreen:(BOOL)hidden;
+- (void)setViewMode:(BOOL)flag hiddenSplashScreen:(BOOL)hidden hiddenTopBar:(BOOL)topBarHidden;
 - (void)setViewModeWidthSize:(CGFloat)viewWidth;
 - (void)setViewModeHeightSize:(CGFloat)viewHeight;
 - (void)setViewModeImpression;
