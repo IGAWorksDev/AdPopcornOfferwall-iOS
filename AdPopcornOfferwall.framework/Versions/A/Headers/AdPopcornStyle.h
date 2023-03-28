@@ -13,6 +13,7 @@
 @property (nonatomic, copy) NSString *offerwallTitle;
 @property (nonatomic, unsafe_unretained) BOOL useSpecialOffer;
 @property (nonatomic, strong) UIColor *mainOfferwallColor;
+@property (nonatomic, unsafe_unretained) NSInteger startTabIndex;
 
 + (AdPopcornStyle *)sharedInstance;
 
