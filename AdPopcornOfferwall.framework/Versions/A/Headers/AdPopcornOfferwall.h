@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "APError.h"
+#import "AdPopcornTabInfo.h"
 
 @protocol AdPopcornOfferwallDelegate;
 @protocol AdPopcornOfferwallClientRewardDelegate;
@@ -31,6 +32,21 @@ typedef enum _AdPopcornOfferwallLogLevel
     AdPopcornOfferwallLogTrace
 } AdPopcornOfferwallLogLevel;
 
+typedef enum TabType
+{
+    APOFFERWALL_NONE_TYPE_TAB = -1,
+    APOFFERWALL_ALL_TYPE_TAB = 0,
+    APOFFERWALL_THE_OTHERS_TYPE_TAB = 8,
+    APOFFERWALL_CPS_TYPE_TAB = 9,
+    APOFFERWALL_CPM_TYPE_TAB = 10,
+    APOFFERWALL_NEWS_TYPE_TAB = 11
+} AdPopcornOfferwallTabType;
+
+typedef enum MediaNo
+{
+    APOFFERWALL_LOTTEM_MEM_MEDIA_NO = 0
+} AdPopcornOfferwallCustomMediaNo;
+
 @interface AdPopcornOfferwall : NSObject
 {
 
@@ -38,7 +54,7 @@ typedef enum _AdPopcornOfferwallLogLevel
 
 @property (nonatomic, weak) id<AdPopcornOfferwallDelegate> delegate;
 
-// igaworks에서 제공하는 reward server를 사용할것인지 여부.
+// 애드팝콘에서 제공하는 reward server를 사용할것인지 여부.
 @property (nonatomic, unsafe_unretained) BOOL useIgaworksRewardServer;
 @property (nonatomic, weak) id<AdPopcornOfferwallClientRewardDelegate> clientRewardDelegate;
 
@@ -84,6 +100,32 @@ typedef enum _AdPopcornOfferwallLogLevel
 
 /*!
  @abstract
+ Open Custom tab offerwall.
+ 
+ @discussion
+ 노출 탭 커스터마이징하여 오퍼월을 노출한다.
+ 
+ @param vController       광고 리스트를 노출시킬 view controller
+ @param tabInfo              커스텀 탭 정보
+ @param delegate             AdPopcornDelegate
+ */
++ (void)openCustomTabOfferWallWithViewController:(UIViewController *)vController tabInfo:(AdPopcornTabInfo *) tabInfo delegate:(id)delegate;
+
+/*!
+ @abstract
+ Open Custom offerwall.
+ 
+ @discussion
+ 커스터마이징 지원 업체 용 api. 커스터마이징된 오퍼월을 노출한다.
+ 
+ @param vController          광고 리스트를 노출시킬 view controller
+ @param mediaNo               사전에 발급된 커스터마이징 타입 값
+ @param delegate             AdPopcornDelegate
+ */
++ (void)openCustomOfferWallWithViewController:(UIViewController *)vController mediaNo:(NSInteger) mediaNo delegate:(id)delegate;
+
+/*!
+ @abstract
  setUseClientRewardServer
  
  @discussion
@@ -93,7 +135,7 @@ typedef enum _AdPopcornOfferwallLogLevel
 
  /*!
  @abstract
- IGAWorks에 리워드 지급이 필요한 정보가 있는지 확인 요청을 한다.
+ 애드팝콘에 리워드 지급이 필요한 정보가 있는지 확인 요청을 한다.
  
  @discussion
  일반적으로 자동으로 pending된 리워드 정보가 업데이트 되지만, 사용자가 직접 pending된 리워드가 있는지 수동으로 확인하기 위한 요청 API.
@@ -103,7 +145,7 @@ typedef enum _AdPopcornOfferwallLogLevel
 
 /*!
  @abstract
- IGAWorks에 리워드 지급 확정 처리를 요청한다.
+ 애드팝콘에 리워드 지급 확정 처리를 요청한다.
  
  @discussion
  이곳에서 사용자에게 리워드 지급 처리를 한다. 지급 처리가 완료 되었다면, 해당 메소드를 호출하여 IGAWorks에 리워드 지급 확정 처리를 요청한다.

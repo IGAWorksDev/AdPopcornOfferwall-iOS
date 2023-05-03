@@ -11,6 +11,7 @@
 // AP error domain
 extern NSString *const kAPErrorDomain;
 
+
 // NSError codes for AP error domain.
 typedef NS_ENUM(NSInteger, APErrorCode){
     APException = 200,

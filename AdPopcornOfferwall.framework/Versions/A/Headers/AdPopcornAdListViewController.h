@@ -16,6 +16,8 @@ typedef enum _presentedViewType
     Landscape
 } PresentedViewType;
 
+@class AdPopcornTabInfo;
+
 @interface AdPopcornAdListViewController : UIViewController
 {
 }
@@ -23,13 +25,13 @@ typedef enum _presentedViewType
 @property (nonatomic, strong) NSMutableDictionary *userDataDictionaryForFilter;
 @property (nonatomic, weak) id<AdListViewControllerDelegate> adListViewControllerDelegate;
 @property (nonatomic, unsafe_unretained) BOOL isCPMMode;
+@property (nonatomic, strong) AdPopcornTabInfo *customTabInfo;
 
 - (void)adjustOrientation:(UIInterfaceOrientation)toInterfaceOrientation;
 - (void)setViewMode:(BOOL)flag hiddenSplashScreen:(BOOL)hidden hiddenTopBar:(BOOL)topBarHidden;
 - (void)setViewModeWidthSize:(CGFloat)viewWidth;
 - (void)setViewModeHeightSize:(CGFloat)viewHeight;
 - (void)setViewModeImpression;
-
 @end
 
 @protocol AdListViewControllerDelegate <NSObject>
