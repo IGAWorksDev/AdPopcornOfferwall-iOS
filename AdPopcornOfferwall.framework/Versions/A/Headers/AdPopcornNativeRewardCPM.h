@@ -41,12 +41,11 @@
 @property (nonatomic, copy) NSString *ctaDefaultCompleteText;
 @property (nonatomic, unsafe_unretained) BOOL enableTextBoxOutline;
 
-
 - (instancetype)initWithFrame:(CGRect)frame viewController:(UIViewController *)viewController;
 - (void)loadAd;
 - (void)stopAd;
 - (void)setMaxCampaignCount:(int) maxCampaignCount;
-
+- (void)setNewsCampaignAuth:(NSString *)auth;
 @end
 
 @protocol AdPopcornNativeAdDelegate <NSObject>

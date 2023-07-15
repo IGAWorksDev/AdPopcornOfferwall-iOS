@@ -43,4 +43,6 @@ typedef enum _presentedViewType
 - (void)handleClickTab:(UIGestureRecognizer *)recognizer;
 - (void)handleClickSubTab:(UIGestureRecognizer *)recognizer;
 - (void)completeNewsCampaign:(NSString *)auth;
+- (void)completeWebViewCampaign:(NSString *)auth;
+- (void)showWebViewCampaign:(NSString *)url;
 @end

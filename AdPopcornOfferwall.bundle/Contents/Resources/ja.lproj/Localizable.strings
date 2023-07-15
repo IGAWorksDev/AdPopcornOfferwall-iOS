@@ -140,6 +140,8 @@
 "userConsentAcceptButton" = "동의합니다";
 
 "cancelUserConsent" = "개인정보 수집을 해제하면 더 이상 애드팝콘 서비스를 사용하실 수 없습니다.그래도 진행하시겠습니까?";
+"cancelUserConsentIOS14" = "개인정보 수집 해제를 원하실 경우 아래의 경로로 설정이 필요합니다.
+[설정 > 개인정보 수집 해제 할 APP 선택 > 추적허용 ON설정을 OFF로 변경 or 설정 > 개인정보 보호 > 추적 > 개인정보 수집 해제할 APP의 ON 설정을 OFF로 변경]";
 "totalRewardSummaryInfo" = "모든 미션을 달성하면 ⛳️\n총 ";
 
 "allCampaignTab" = "전체";
@@ -154,3 +156,6 @@
 "ios14ParticipateAlertMessage" = "앱 설치 및 실행 후 ‘사용자 추적 허용’을 반드시 해주셔야 정상적으로 리워드가 지급됩니다.";
 "lottememTitle" = "뉴스 바로 적립";
 "participationBtn3" = " 적립하기";
+"webViewRewardConditionDesc" = "스크롤을 내려 이벤트를 확인하고,\n게이지가 모두 찰 경우, 리워드가 지급됩니다.";
+"checkWebViewEvent" = "이벤트 확인하기";
+"webViewRewardSuccess" = "리워드 지급이 완료 되었습니다.";
