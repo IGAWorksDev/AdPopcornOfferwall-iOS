@@ -29,7 +29,6 @@
 @property (nonatomic, unsafe_unretained) BOOL isIndicatorTextMode;
 @property (nonatomic, strong) UIColor *indicatorCurrentPageTextColor;
 @property (nonatomic, strong) UIColor *indicatorTotalPageTextColor;
-
 @property (nonatomic, strong) UIColor *titleTextColor;
 @property (nonatomic, unsafe_unretained) int titleTextSize;
 @property (nonatomic, strong) UIColor *descTextColor;
@@ -40,6 +39,11 @@
 @property (nonatomic, copy) NSString *ctaDefaultText;
 @property (nonatomic, copy) NSString *ctaDefaultCompleteText;
 @property (nonatomic, unsafe_unretained) BOOL enableTextBoxOutline;
+@property (nonatomic, unsafe_unretained) BOOL enableAutoRolling;
+@property (nonatomic, unsafe_unretained) int autoRollingTriggerTime;
+@property (nonatomic, copy) UIImage *rewardIconResource;
+@property (nonatomic, unsafe_unretained) CGSize rewardIconResourceSize;
+@property (nonatomic, weak) UIViewController *viewController;
 
 - (instancetype)initWithFrame:(CGRect)frame viewController:(UIViewController *)viewController;
 - (void)loadAd;
