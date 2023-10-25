@@ -1,0 +1,38 @@
+framework module AdPopcornOfferwall {
+    umbrella header "AdPopcornOfferwallSDK.h"
+    header "AdPopcornOfferwall.h"
+    header "AdPopcornAdListViewController.h"
+    header "AdPopcornNativeReward.h"
+    header "AdPopcornNativeRewardCPM.h"
+    header "AdPopcornStyle.h"
+    header "AdPopcornTabInfo.h"
+    header "APError.h"
+    header "RewardInfo.h"
+    
+    export *
+ 
+    module * {
+         export *
+     }
+    
+    link framework "ImageIO"
+    link framework "MessageUI"
+    link framework "SafariServices"
+    link framework "MediaPlayer"
+    link framework "AdSupport"
+    link framework "AVKit"
+    link framework "AVFoundation"
+    link framework "CoreMedia"
+    link framework "WebKit"
+    link framework "Security"
+    link framework "CoreTelephony"
+    link framework "SystemConfiguration"
+    link framework "QuartzCore"
+    link framework "UIKit"
+    link framework "AppTrackingTransparency"
+    
+    link "xml2"
+}
+
+
+

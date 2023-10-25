@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 s.name         = "AdPopcornOfferwall"
-s.version      = "4.3.6"
-s.summary      = "AdPopcornOfferwall.framework"
+s.version      = "4.4.0"
+s.summary      = "AdPopcornOfferwall.xcframework"
 s.homepage     = "https://github.com/IGAWorksDev/AdPopcornOfferwall-iOS"
 
 s.license      = {
@@ -15,16 +15,12 @@ https://github.com/IGAWorksDev/AdPopcornOfferwall-iOS
 LICENSE
 }
 
-s.platform = :ios, '9.0'
+s.platform = :ios, '11.0'
 s.author       = { "mick" => "mick@igaworks.com" }
 s.source       = { :git => "https://github.com/IGAWorksDev/AdPopcornOfferwall-iOS.git", :tag => "#{s.version}" }
 s.resources = "AdPopcornOfferwall.bundle"
-s.ios.vendored_frameworks = 'AdPopcornOfferwall.framework'
-s.frameworks = 'ImageIO', 'MessageUI', 'SafariServices', 'MediaPlayer', 'AdSupport', 'AVKit', 'AVFoundation', 'CoreMedia', 'WebKit', 'MessageUI', 'Security', 'CoreTelephony', 'SystemConfiguration', 'QuartzCore', 'UIKit', 'AppTrackingTransparency'
+s.ios.vendored_frameworks = 'AdPopcornOfferwall.xcframework'
+s.frameworks = 'ImageIO', 'MessageUI', 'SafariServices', 'MediaPlayer', 'AdSupport', 'AVKit', 'AVFoundation', 'CoreMedia', 'WebKit', 'Security', 'CoreTelephony', 'SystemConfiguration', 'QuartzCore', 'UIKit', 'AppTrackingTransparency'
 s.libraries = 'xml2'
 s.xcconfig     = { 'HEADER_SEARCH_PATHS' => '"$(SDKROOT)/usr/include/libxml2"' }
-s.pod_target_xcconfig = {
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
-}
-s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 end
