@@ -40,6 +40,7 @@
 @property (nonatomic, weak) UIViewController *viewController;
 
 - (instancetype)initWithFrame:(CGRect)frame viewController:(UIViewController *)viewController;
+- (void)initWithViewController:(UIViewController *)viewController;
 - (void)loadAd;
 - (void)stopAd;
 - (void)setMaxCampaignCount:(int) maxCampaignCount;
@@ -58,6 +59,18 @@
  광고 로딩 실패 시, 호출된다
  */
 - (void)ApNativeRewardLoadFailed:(NSInteger)errorCode;
+
+/*!
+ @abstract
+ 광고 클릭 시 호출된다.
+ */
+- (void)ApNativeRewardCampaignClicked;
+
+/*!
+ @abstract
+ 광고 더보기 클릭 시 호출된다.
+ */
+- (void)ApNativeRewardShortcutClicked;
 @end
 
 

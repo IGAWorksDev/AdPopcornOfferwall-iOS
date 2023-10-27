@@ -46,6 +46,7 @@
 @property (nonatomic, weak) UIViewController *viewController;
 
 - (instancetype)initWithFrame:(CGRect)frame viewController:(UIViewController *)viewController;
+- (void)initWithViewController:(UIViewController *)viewController;
 - (void)loadAd;
 - (void)stopAd;
 - (void)setMaxCampaignCount:(int) maxCampaignCount;
