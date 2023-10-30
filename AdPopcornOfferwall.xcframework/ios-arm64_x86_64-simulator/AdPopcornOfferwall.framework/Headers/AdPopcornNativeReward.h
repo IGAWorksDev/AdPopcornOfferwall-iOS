@@ -36,6 +36,7 @@
 @property (nonatomic, strong) UIColor *contentsBgColor;
 @property (nonatomic, strong) UIColor *contentsLineColor;
 @property (nonatomic, strong) UIColor *nativeBackgroundColor;
+@property (nonatomic, unsafe_unretained) BOOL useCustomShortCutEvent;
 
 @property (nonatomic, weak) UIViewController *viewController;
 
