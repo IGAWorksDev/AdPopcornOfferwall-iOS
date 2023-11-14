@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = "AdPopcornOfferwall"
-s.version      = "4.4.4"
+s.version      = "4.4.5"
 s.summary      = "AdPopcornOfferwall.xcframework"
 s.homepage     = "https://github.com/IGAWorksDev/AdPopcornOfferwall-iOS"
 

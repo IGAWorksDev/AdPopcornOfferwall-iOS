@@ -153,7 +153,7 @@
 "easyBadge" = "간편참여";
 "bigRewardBadge" = "큰혜택";
 "ios14ParticipateAlertMessage" = "앱 설치 및 실행 후 ‘사용자 추적 허용’을 반드시 해주셔야 정상적으로 리워드가 지급됩니다.";
-"lottememTitle" = "웹툰 바로 적립";
+"lottememTitle" = "엔터테인 바로적립";
 "participationBtn3" = " 적립하기";
 "webViewRewardConditionDesc" = "스크롤을 내려 이벤트를 확인하고,\n게이지가 모두 찰 경우, 리워드가 지급됩니다.";
 "checkWebViewEvent" = "이벤트 확인하기";
