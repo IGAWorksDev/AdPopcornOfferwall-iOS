@@ -93,6 +93,18 @@
 		<data>
 		lfJhCvLefnIj0liigQ92vSATC20=
 		</data>
+		<key>AdPopcornOfferwall.bundle/Contents/Resources/images/ap_reward_native_more_2.png</key>
+		<data>
+		fKGyhDpAo9l9s2NYjIPO32FJYi8=
+		</data>
+		<key>AdPopcornOfferwall.bundle/Contents/Resources/images/ap_reward_native_more_2@2x.png</key>
+		<data>
+		VTrISpofmhhMBKLF+gZ3BQr6wN0=
+		</data>
+		<key>AdPopcornOfferwall.bundle/Contents/Resources/images/ap_reward_native_more_2@3x.png</key>
+		<data>
+		tM5nvEIWa8j+UwUoEAgENBpTIuY=
+		</data>
 		<key>AdPopcornOfferwall.bundle/Contents/Resources/images/ap_webview_back_navigation.png</key>
 		<data>
 		q406SSarW1FknKRGjj3gtRVMJMo=
@@ -569,6 +581,27 @@
 			<key>hash2</key>
 			<data>
 			DrshrFaAUOzRvQwaBvMrLVibP7Nc9os8pGjcx6K825I=
+			</data>
+		</dict>
+		<key>AdPopcornOfferwall.bundle/Contents/Resources/images/ap_reward_native_more_2.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			jT0/03MNkQHPtuAXKN62MO4BFxpzeBFqf+1KeOolgXw=
+			</data>
+		</dict>
+		<key>AdPopcornOfferwall.bundle/Contents/Resources/images/ap_reward_native_more_2@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			DQJ8nXUpdXEUcKqSzqaymYF6y/bdoiMml4SujffV2YU=
+			</data>
+		</dict>
+		<key>AdPopcornOfferwall.bundle/Contents/Resources/images/ap_reward_native_more_2@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tqT1494J6WvNQbUPYrYK/RzDPz2sIqqfjIfQmg6LPIc=
 			</data>
 		</dict>
 		<key>AdPopcornOfferwall.bundle/Contents/Resources/images/ap_webview_back_navigation.png</key>
