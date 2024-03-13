@@ -9,6 +9,8 @@
 #import "AdPopcornAdListViewController.h"
 #import "AdPopcornNativeReward.h"
 #import "AdPopcornNativeRewardCPM.h"
+#import "AdPopcornCustomRewardCPM.h"
+#import "ApCustomRewardCPMModel.h"
 #import "AdPopcornStyle.h"
 #import "AdPopcornTabInfo.h"
 #import "APError.h"

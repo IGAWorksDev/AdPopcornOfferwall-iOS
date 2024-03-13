@@ -391,6 +391,10 @@
 		<data>
 		/uc//XIr6Frq/YYTicifb8Ebn1Q=
 		</data>
+		<key>Headers/AdPopcornCustomRewardCPM.h</key>
+		<data>
+		ZhAF6ZSpRALpqwgJX09U/T9hgbE=
+		</data>
 		<key>Headers/AdPopcornNativeReward.h</key>
 		<data>
 		ttkpbR5CH33xhd4DqiG6zLo0qxM=
@@ -405,7 +409,7 @@
 		</data>
 		<key>Headers/AdPopcornOfferwallSDK.h</key>
 		<data>
-		mgQ3WHWgj16C2Mu4toCdfK5b3m8=
+		9ySd55pKgodPq+wkVd9nx6nfQwg=
 		</data>
 		<key>Headers/AdPopcornStyle.h</key>
 		<data>
@@ -414,6 +418,10 @@
 		<key>Headers/AdPopcornTabInfo.h</key>
 		<data>
 		UGZNMcmRqNIn77Yx1TOAdMg1ZOg=
+		</data>
+		<key>Headers/ApCustomRewardCPMModel.h</key>
+		<data>
+		B5/AD19IhK4u6L7teIGyed47Z7s=
 		</data>
 		<key>Headers/RewardInfo.h</key>
 		<data>
@@ -429,7 +437,7 @@
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		D9VpxbmqCbJAgnMMz/IfnQ96GrM=
+		/bBSJRWc1f821YZ+AlYPlxNIqAo=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -1091,6 +1099,13 @@
 			pPgjMhr9qDYaPLnlfrEOTQi3fQ0qb3SB2YZFdQTb03Q=
 			</data>
 		</dict>
+		<key>Headers/AdPopcornCustomRewardCPM.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			pbCy6r7ctW28slucW9Wn0lyrgkFq4bM63QO5S63iRN4=
+			</data>
+		</dict>
 		<key>Headers/AdPopcornNativeReward.h</key>
 		<dict>
 			<key>hash2</key>
@@ -1116,7 +1131,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xWv7LAU1fQw/RC/TFUulLw/Cske60lFF68ljO4pFlnw=
+			eqA4KpdijcbJLpO/R0jK2pag9fSEPhaWbiWUHneXIa0=
 			</data>
 		</dict>
 		<key>Headers/AdPopcornStyle.h</key>
@@ -1131,6 +1146,13 @@
 			<key>hash2</key>
 			<data>
 			BivA9l1McXDQ3LHUrdnrRumb7A7zkFxE3jnLaWjJtNs=
+			</data>
+		</dict>
+		<key>Headers/ApCustomRewardCPMModel.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			h+1BcmxOOs5vtX4ToSagTexl92AGab/PvY/dwzhZNyM=
 			</data>
 		</dict>
 		<key>Headers/RewardInfo.h</key>
@@ -1151,7 +1173,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			P2Gudd43jETYN/ySKl41m6S4bi0V1tLAKF05T4YMlVA=
+			sGO1W6/CgZy2MSactMZEoKHds1vqvNEii5f/nqo1Blw=
 			</data>
 		</dict>
 	</dict>

@@ -8,6 +8,8 @@ framework module AdPopcornOfferwall {
     header "AdPopcornTabInfo.h"
     header "APError.h"
     header "RewardInfo.h"
+    header "AdPopcornCustomRewardCPM.h"
+    header "ApCustomRewardCPMModel.h"
     
     export *
  
