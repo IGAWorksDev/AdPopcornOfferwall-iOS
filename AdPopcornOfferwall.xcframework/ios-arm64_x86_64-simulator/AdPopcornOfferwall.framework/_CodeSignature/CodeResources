@@ -429,7 +429,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		aP022oArC2Arho4kxyk4aAh1I/c=
+		vohcn6Sgk9JDqMd8qVKeEO79ZGM=
 		</data>
 		<key>LICENSE</key>
 		<data>
@@ -438,6 +438,10 @@
 		<key>Modules/module.modulemap</key>
 		<data>
 		/bBSJRWc1f821YZ+AlYPlxNIqAo=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		Z8K0Wo2VUbt+iDuXon6cThn1qIs=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -1174,6 +1178,13 @@
 			<key>hash2</key>
 			<data>
 			sGO1W6/CgZy2MSactMZEoKHds1vqvNEii5f/nqo1Blw=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			UCJiWeTUQ4e/9LfGWn4tz8Aq4VLUqHfmfSjcimsouHI=
 			</data>
 		</dict>
 	</dict>
