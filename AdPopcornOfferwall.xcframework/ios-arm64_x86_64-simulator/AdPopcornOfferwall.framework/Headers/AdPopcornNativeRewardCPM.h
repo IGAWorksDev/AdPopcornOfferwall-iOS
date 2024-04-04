@@ -78,5 +78,11 @@
  광고 클릭시 호출 된다
  */
 - (void)ApNativeRewardCPMClicked;
+
+/*!
+ @abstract
+ 광고 완료시 호출 된다
+ */
+- (void)ApNativeRewardCPMCompleted;
 @end
 

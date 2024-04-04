@@ -256,7 +256,7 @@ typedef enum MediaNo
 - (void)onOpenCampaignPageResult:(BOOL)result resultCode:(NSInteger)resultCode
                    resultMessage:(NSString *)resultMessage;
 - (void)onCloseCampaignPage;
-
+- (void)onCompletedCampaign;
 @end
 
 @protocol AdPopcornOfferwallClientRewardDelegate <NSObject>
