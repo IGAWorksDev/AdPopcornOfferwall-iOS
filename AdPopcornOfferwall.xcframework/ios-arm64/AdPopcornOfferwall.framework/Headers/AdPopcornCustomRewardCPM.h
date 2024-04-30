@@ -56,4 +56,10 @@
  광고 클릭 후, 참여 실패 시 호출된다.
  */
 - (void)ApCustomRewardCPMClickFailed:(NSInteger)errorCode;
+
+/*!
+ @abstract
+ 광고 완료시 호출 된다
+ */
+- (void)ApCustomRewardCPMCompleted;
 @end

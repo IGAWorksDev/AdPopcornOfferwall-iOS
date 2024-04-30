@@ -68,5 +68,10 @@
 	</array>
 	<key>NSPrivacyTracking</key>
 	<true/>
+		<key>NSPrivacyTrackingDomains</key>
+	<array>
+		<string>https://apapi.adpopcorn.com</string>
+		<string>https://apapi-staging.adpopcorn.com</string>
+	</array>
 </dict>
 </plist>
