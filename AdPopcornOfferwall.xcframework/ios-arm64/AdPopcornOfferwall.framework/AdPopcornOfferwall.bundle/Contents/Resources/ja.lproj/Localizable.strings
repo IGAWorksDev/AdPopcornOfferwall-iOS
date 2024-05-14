@@ -95,6 +95,7 @@
 "campaignName" = "キャンペーン名";
 "reward" = "報酬";
 "rewardHistoryInfo" = "付与履歴は直近1ヶ月以内のもののみ表示します。";
+"noRewardHistoryInfo" = "支払い履歴がありません。";
 	
 "etcQuestion1" = "付与が完了したと表示されますけど、報酬が付与されていません。";
 "etcQuestion2" = "既に参加したというメッセージが出てきます。";
@@ -166,3 +167,4 @@
 "webtoonNoStartTitle" = "웹툰 보지 않고 나가시겠습니까?";
 "webtoonNoStartDesc" = "광고 클릭 후에 웹툰 보기가 가능합니다.";
 "showAd" = "광고 보기";
+"checkAdvancedInstallType" = "정상적인 참여 확인을 위해 앱을 실행합니다.\n실행 후에는 네트워크 사정에 따라 아이템 지급은 최대 5분 까지 걸릴 수 있습니다.";

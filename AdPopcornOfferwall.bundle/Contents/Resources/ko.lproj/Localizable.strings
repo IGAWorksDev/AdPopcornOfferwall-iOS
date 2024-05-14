@@ -83,8 +83,8 @@
 "cpaBadge" = "달성형";
 "registerBadge" = "회원가입형";
 "actionBadge" = "액션형";
-"cpiBadge" = "앱설치";
-"cpeBadge" = "앱실행";
+"cpiBadge" = "설치형";
+"cpeBadge" = "실행형";
 "loginBadge" = "로그인형";
 "agreementBadge" = "약관동의형";
 "videoBadge" = "시청형";
@@ -157,7 +157,7 @@
 "ios14ParticipateAlertMessage" = "앱 설치 및 실행 후 ‘사용자 추적 허용’을 반드시 해주셔야 정상적으로 리워드가 지급됩니다.";
 
 "csPrivacyDesc" = "당사는 다음과 같은 개인 정보를 수집하고 있습니다.\n• 수집항목 : 이름, 핸드폰번호, 이메일\n• 수집목적 : 문의 내역 확인과 답변처리\n• 활용기간 : 3년 보관 후 파기\n고객님은 동의를 거부할 수 있으며, 동의 거부시 고객센터를 이용할 수 없습니다.";
-"csConsentPrivacy" = "개인정보 이용 및 수집에 동의합니다.";
+"csConsentPrivacy" = "개인정보 이용및 수집에 동의합니다.";
 "csNeedConsentPrivacy" = "개인정보 수집에 동의해주세요.";
 "participationStep" = "참여방법";
 "participationBtn" = "참여하고 적립받기";
@@ -181,6 +181,7 @@
 "webViewRewardConditionDesc" = "스크롤을 내려 이벤트를 확인하고,\n게이지가 모두 찰 경우, 리워드가 지급됩니다.";
 "checkWebViewEvent" = "이벤트 확인하기";
 "webViewRewardSuccess" = "리워드 지급이 완료 되었습니다.";
+
 "webtoonRewardConditionDesc" = "스크롤을 내려 웹툰을 보고,\n게이지가 모두 찰 경우, 리워드가 지급됩니다.";
 "readWebtoon" = "웹툰 보기";
 "moreWebtoon" = "다른 웹툰 보고 리워드 추가 적립 받기";
@@ -189,3 +190,4 @@
 "webtoonNoStartTitle" = "웹툰 보지 않고 나가시겠습니까?";
 "webtoonNoStartDesc" = "광고 클릭 후에 웹툰 보기가 가능합니다.";
 "showAd" = "광고 보기";
+"checkAdvancedInstallType" = "정상적인 참여 확인을 위해 앱을 실행합니다.\n실행 후에는 네트워크 사정에 따라 아이템 지급은 최대 5분 까지 걸릴 수 있습니다.";

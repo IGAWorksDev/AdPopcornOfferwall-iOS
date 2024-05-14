@@ -95,6 +95,8 @@
 "campaignName" = "Campaign";
 "reward" = "Reward";
 "rewardHistoryInfo" = "You can see only recent 1 month history for Reward.";
+"noRewardHistoryInfo" = "There is no reward historys.";
+
 "etcQuestion1" = "I haven't received any reward even status is \"Completed\".";
 "etcQuestion2" = "\"You already particiated.\" message keeps pop-up. ";
 "etcAnswer1" = "Please contact Customer Service of selected app.";
@@ -169,3 +171,4 @@
 "webtoonNoStartTitle" = "웹툰 보지 않고 나가시겠습니까?";
 "webtoonNoStartDesc" = "광고 클릭 후에 웹툰 보기가 가능합니다.";
 "showAd" = "광고 보기";
+"checkAdvancedInstallType" = "정상적인 참여 확인을 위해 앱을 실행합니다.\n실행 후에는 네트워크 사정에 따라 아이템 지급은 최대 5분 까지 걸릴 수 있습니다.";
