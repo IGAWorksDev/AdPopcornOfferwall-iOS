@@ -66,7 +66,7 @@ typedef enum MediaNo
 
 /*!
  @abstract
- IGAWorks appkey, hashkey를 설정한다.
+ AdPopcorn appkey, hashkey를 설정한다.
  
  @param appKey 앱키
  @param hashKey 해시키

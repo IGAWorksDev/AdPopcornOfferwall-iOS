@@ -15,3 +15,5 @@
 #import "AdPopcornTabInfo.h"
 #import "APError.h"
 #import "RewardInfo.h"
+#import "AdPopcornBenefitWKScriptMessageHandler.h"
+#import "AdPopcornBenefit.h"
