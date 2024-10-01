@@ -2,6 +2,7 @@ framework module AdPopcornOfferwall {
     umbrella header "AdPopcornOfferwallSDK.h"
     header "AdPopcornOfferwall.h"
     header "AdPopcornAdListViewController.h"
+    header "AdPopcornOfferwallViewController.h"
     header "AdPopcornNativeReward.h"
     header "AdPopcornNativeRewardCPM.h"
     header "AdPopcornStyle.h"
@@ -10,6 +11,8 @@ framework module AdPopcornOfferwall {
     header "RewardInfo.h"
     header "AdPopcornCustomRewardCPM.h"
     header "ApCustomRewardCPMModel.h"
+    header "AdPopcornBenefitWKScriptMessageHandler.h"
+    header "AdPopcornBenefit.h"
     
     export *
  

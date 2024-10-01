@@ -55,7 +55,7 @@ typedef enum MediaNo
 @property (nonatomic, weak) id<AdPopcornOfferwallDelegate> delegate;
 
 // 애드팝콘에서 제공하는 reward server를 사용할것인지 여부.
-@property (nonatomic, unsafe_unretained) BOOL useIgaworksRewardServer;
+@property (nonatomic, unsafe_unretained) BOOL useAdPopcornRewardServer;
 @property (nonatomic, weak) id<AdPopcornOfferwallClientRewardDelegate> clientRewardDelegate;
 
 /*!

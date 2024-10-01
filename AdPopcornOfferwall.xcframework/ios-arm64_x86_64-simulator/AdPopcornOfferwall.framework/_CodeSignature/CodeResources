@@ -413,11 +413,15 @@
 		</data>
 		<key>Headers/AdPopcornOfferwall.h</key>
 		<data>
-		r0U41Sg8qRp824SH2fH/1xb0NI4=
+		o26ib59w2Sr8n5AOnAdOtxPYtLI=
 		</data>
 		<key>Headers/AdPopcornOfferwallSDK.h</key>
 		<data>
-		2d0XI8vlyuoulI4ey5DQDfqexJo=
+		/3uUhH4qRknJ0KsVBKKvZuAtaOA=
+		</data>
+		<key>Headers/AdPopcornOfferwallViewController.h</key>
+		<data>
+		/saacF1SZeQZiqSxUv49QUEcQGo=
 		</data>
 		<key>Headers/AdPopcornStyle.h</key>
 		<data>
@@ -445,7 +449,7 @@
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		/bBSJRWc1f821YZ+AlYPlxNIqAo=
+		oU7H8L7188dmZcL0qtr5Yb08D84=
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
@@ -1150,14 +1154,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6T/nDCP1ikX1Ym9mKJNSPvV2G4+H6SoHGGYFXmxDdsc=
+			PMH9QA1mHY+YWu048gwZfinkmHN75GC3UfLzCZAHPgU=
 			</data>
 		</dict>
 		<key>Headers/AdPopcornOfferwallSDK.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NkmLULOM2RcxhgqMjOyx01odDuB2e+vzNxHRp39ud9g=
+			RDY04boctkpNzm8DT0OREa6s0buEwNlI7r3TZj3QxR0=
+			</data>
+		</dict>
+		<key>Headers/AdPopcornOfferwallViewController.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			A5UT0YuEJBFcSm8YZEsQLaXqRyKHaG9Zt+U6L5OX5+0=
 			</data>
 		</dict>
 		<key>Headers/AdPopcornStyle.h</key>
@@ -1199,7 +1210,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sGO1W6/CgZy2MSactMZEoKHds1vqvNEii5f/nqo1Blw=
+			Kxk63HU/5Xvm9HVxzJFa7IwIohLj8f6MIWOCX7H98/E=
 			</data>
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>

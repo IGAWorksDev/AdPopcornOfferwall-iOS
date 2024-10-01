@@ -7,6 +7,7 @@
 
 #import "AdPopcornOfferwall.h"
 #import "AdPopcornAdListViewController.h"
+#import "AdPopcornOfferwallViewController.h"
 #import "AdPopcornNativeReward.h"
 #import "AdPopcornNativeRewardCPM.h"
 #import "AdPopcornCustomRewardCPM.h"
