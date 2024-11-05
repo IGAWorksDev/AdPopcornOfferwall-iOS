@@ -10,14 +10,14 @@
 #import <WebKit/WebKit.h>
 
 @protocol OfferwallViewControllerDelegate;
-@protocol OfferwallViewTypeDelegate;
+@protocol AdPopcornOfferwallViewTypeDelegate;
 
 @interface AdPopcornOfferwallViewController : UIViewController
 {
     
 }
 @property (nonatomic, weak) id<OfferwallViewControllerDelegate> offerwallViewControllerDelegate;
-@property (nonatomic, weak) id<OfferwallViewTypeDelegate> offerwallViewTypeDelegate;
+@property (nonatomic, weak) id<AdPopcornOfferwallViewTypeDelegate> offerwallViewTypeDelegate;
 @property (nonatomic, unsafe_unretained) int pageType;
 @property (nonatomic, copy) NSString *openURL;
 
@@ -26,6 +26,7 @@
 - (void)setViewModeHeightSize:(CGFloat)viewHeight;
 - (void)setViewModeImpression;
 - (void)changeViewModeSize:(CGFloat)viewWidth viewHeight:(CGFloat)viewHeight;
+- (void)closeOfferwallViewController;
 @end
 
 @protocol OfferwallViewControllerDelegate <NSObject>
@@ -34,9 +35,11 @@
 - (void)completeV2Campaign;
 @end
 
-@protocol OfferwallViewTypeDelegate <NSObject>
+@protocol AdPopcornOfferwallViewTypeDelegate <NSObject>
 
 @optional
 - (void)OnLoadedOfferwall;
 - (void)OnMeasuredOfferwallHeight:(int)height;
+- (void)OnOpenedDetailPage;
+- (void)OnClosedDetailPage;
 @end

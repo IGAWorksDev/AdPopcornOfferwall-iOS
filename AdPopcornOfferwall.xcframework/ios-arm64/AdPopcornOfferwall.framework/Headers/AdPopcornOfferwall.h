@@ -209,6 +209,15 @@ typedef enum MediaNo
 */
 + (void)openCampaignPage:(UIViewController *)vController campaignKey:(NSString *)campaignKey;
 
+/*!
+@abstract
+이미 오픈되어 있는 오퍼월 강제 종료 api
+
+@discussion
+이미 오픈되어 있는 offerwall viewcontroller를 닫아준다.
+*/
++ (void)closeOfferwallViewController;
+
 @end
 
 @protocol AdPopcornOfferwallDelegate <NSObject>
