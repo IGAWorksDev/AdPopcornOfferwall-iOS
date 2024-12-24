@@ -20,6 +20,7 @@
 @property (nonatomic, weak) id<AdPopcornOfferwallViewTypeDelegate> offerwallViewTypeDelegate;
 @property (nonatomic, unsafe_unretained) int pageType;
 @property (nonatomic, copy) NSString *openURL;
+@property (nonatomic, copy) NSString *bridgePlacementId;
 
 - (void)setViewMode:(BOOL)flag;
 - (void)setViewModeWidthSize:(CGFloat)viewWidth;

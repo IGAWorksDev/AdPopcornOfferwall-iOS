@@ -125,6 +125,16 @@ typedef enum MediaNo
 + (void)openCustomOfferWallWithViewController:(UIViewController *)vController mediaNo:(NSInteger) mediaNo delegate:(id)delegate;
 
 /*!
+@discussion
+brige 오퍼월을 노출한다.
+
+@param vController          광고 브릿지를 노출시킬 view controller
+@param bridgePlacementId  광고 브릿지ID
+@param delegate             AdPopcornDelegate
+*/
++ (void)openBridgeWithViewController:(UIViewController *)vController bridgePlacementId:(NSString *)bridgePlacementId delegate:(id)delegate;
+
+/*!
  @abstract
  setUseClientRewardServer
  
