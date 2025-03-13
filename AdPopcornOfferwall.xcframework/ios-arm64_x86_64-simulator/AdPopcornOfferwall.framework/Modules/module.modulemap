@@ -11,8 +11,9 @@ framework module AdPopcornOfferwall {
     header "RewardInfo.h"
     header "AdPopcornCustomRewardCPM.h"
     header "ApCustomRewardCPMModel.h"
-    header "AdPopcornBenefitWKScriptMessageHandler.h"
-    header "AdPopcornBenefit.h"
+    header "APRewardHybridWKScriptMessageHandler.h"
+    header "AdPopcornCustomReward.h"
+    header "ApCustomRewardModel.h"
     
     export *
  
