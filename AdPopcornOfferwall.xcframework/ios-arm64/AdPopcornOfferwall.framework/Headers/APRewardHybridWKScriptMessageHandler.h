@@ -1,15 +1,15 @@
 //
-//  AdPopcornBenefitWKScriptMessageHandler.h
+//  AdPopcornRewardHybridWKScriptMessageHandler.h
 //  AdPopcornOfferwallLib
 //
-//  Created by 김민석 on 6/11/24.
-//  Copyright © 2024 AdPopcorn. All rights reserved.
+//  Created by 김민석 20250310
+//  Copyright © 2025 AdPopcorn. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <WebKit/WebKit.h>
 
-@interface AdPopcornBenefitWKScriptMessageHandler : NSObject<WKScriptMessageHandler>
+@interface APRewardHybridWKScriptMessageHandler : NSObject<WKScriptMessageHandler>
 
 @property (nonatomic, weak) id<WKScriptMessageHandler> scriptDelegate;
 @property (nonatomic, weak) WKWebView *webView;

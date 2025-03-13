@@ -387,17 +387,17 @@
 		<data>
 		yZD6mj6jjpE6VKgFX6DWKiPr9QY=
 		</data>
+		<key>Headers/APRewardHybridWKScriptMessageHandler.h</key>
+		<data>
+		TmeuIXfdm2twaH6qwo1AOP9zNlQ=
+		</data>
 		<key>Headers/AdPopcornAdListViewController.h</key>
 		<data>
 		/uc//XIr6Frq/YYTicifb8Ebn1Q=
 		</data>
-		<key>Headers/AdPopcornBenefit.h</key>
+		<key>Headers/AdPopcornCustomReward.h</key>
 		<data>
-		reQNbfXW13dIk55AvMNzNz0LxsU=
-		</data>
-		<key>Headers/AdPopcornBenefitWKScriptMessageHandler.h</key>
-		<data>
-		eZm3tv0aF06dMFWhJ71UF1idZ54=
+		dylzJ67IwbOGCmBGuKiHtwwYbyU=
 		</data>
 		<key>Headers/AdPopcornCustomRewardCPM.h</key>
 		<data>
@@ -413,15 +413,15 @@
 		</data>
 		<key>Headers/AdPopcornOfferwall.h</key>
 		<data>
-		KTNnCRtRcLWfQiFjaMfu2748piY=
+		s2kuCSwtkVt7edPG1kDtfv26pqM=
 		</data>
 		<key>Headers/AdPopcornOfferwallSDK.h</key>
 		<data>
-		/3uUhH4qRknJ0KsVBKKvZuAtaOA=
+		FFn0TO+38B8wjYpCDuSLl1JIWiw=
 		</data>
 		<key>Headers/AdPopcornOfferwallViewController.h</key>
 		<data>
-		/txNT14ItTvaOAzcI45XQcEry+I=
+		6LdZij3Oe/w4W8JJR+lFXXffqog=
 		</data>
 		<key>Headers/AdPopcornStyle.h</key>
 		<data>
@@ -435,13 +435,17 @@
 		<data>
 		B5/AD19IhK4u6L7teIGyed47Z7s=
 		</data>
+		<key>Headers/ApCustomRewardModel.h</key>
+		<data>
+		5JjmZP3zL0X4F7rf/yh7WONY+as=
+		</data>
 		<key>Headers/RewardInfo.h</key>
 		<data>
 		LTeUtPpsPNmoO9U/dKQaM4bTFCw=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		XBlCtwjjJnaymQ3uK6b6ySr/xgU=
+		+vr7GqcP3XM6DWwsfdEl8PCV45s=
 		</data>
 		<key>LICENSE</key>
 		<data>
@@ -1108,6 +1112,13 @@
 			+Rgym+OGOISlLrnaVmEOi0VbwIySsO8d1f7+Ya42hEY=
 			</data>
 		</dict>
+		<key>Headers/APRewardHybridWKScriptMessageHandler.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RMoTNSrnrg80TMWNIHmvMYZwhIA8CxYun5x2/v2rVok=
+			</data>
+		</dict>
 		<key>Headers/AdPopcornAdListViewController.h</key>
 		<dict>
 			<key>hash2</key>
@@ -1115,18 +1126,11 @@
 			pPgjMhr9qDYaPLnlfrEOTQi3fQ0qb3SB2YZFdQTb03Q=
 			</data>
 		</dict>
-		<key>Headers/AdPopcornBenefit.h</key>
+		<key>Headers/AdPopcornCustomReward.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			L2PrcDEJDy5/6jU7YP9PsIRcJGHmvCQNcCzxvdB4DQU=
-			</data>
-		</dict>
-		<key>Headers/AdPopcornBenefitWKScriptMessageHandler.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			5KysNreZo8XxkqbCbs16zT2Bm3DVy2FQNC8GYHQgv+s=
+			46vlJlNWkvyHFj1xjvZ9KagmcHToKoOWpMHPnQm1jYg=
 			</data>
 		</dict>
 		<key>Headers/AdPopcornCustomRewardCPM.h</key>
@@ -1154,21 +1158,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+HhHHb2l85v6rY4LZclKTu2jWI+OhmOG3Ff5j9Uf/MQ=
+			tC/wwAgWpBUsfiXjxfdbFu6mIuIYoaEmA9W8IcVrvyQ=
 			</data>
 		</dict>
 		<key>Headers/AdPopcornOfferwallSDK.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RDY04boctkpNzm8DT0OREa6s0buEwNlI7r3TZj3QxR0=
+			AG7aKNgLlC1y0Gf1cYpSjpTHa7eDA8vDXUOZr/mHJH4=
 			</data>
 		</dict>
 		<key>Headers/AdPopcornOfferwallViewController.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ec8rcOvrUTGoxltrDIGq4L88GrWbhzi+tI2sZjqIgro=
+			eDlsh+aVqMqRf6lgmItClFov294ZZPhTkGVolbm7JP0=
 			</data>
 		</dict>
 		<key>Headers/AdPopcornStyle.h</key>
@@ -1190,6 +1194,13 @@
 			<key>hash2</key>
 			<data>
 			h+1BcmxOOs5vtX4ToSagTexl92AGab/PvY/dwzhZNyM=
+			</data>
+		</dict>
+		<key>Headers/ApCustomRewardModel.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Mqxwh6bg7vBtMYjB24rMfQR2zDQ7cKJs9HfFNo7twWA=
 			</data>
 		</dict>
 		<key>Headers/RewardInfo.h</key>

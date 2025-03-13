@@ -21,6 +21,7 @@
 @property (nonatomic, unsafe_unretained) int pageType;
 @property (nonatomic, copy) NSString *openURL;
 @property (nonatomic, copy) NSString *bridgePlacementId;
+@property (nonatomic, copy) NSString *detailPageCampaignKey;
 
 - (void)setViewMode:(BOOL)flag;
 - (void)setViewModeWidthSize:(CGFloat)viewWidth;

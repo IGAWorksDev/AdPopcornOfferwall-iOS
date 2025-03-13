@@ -194,12 +194,30 @@ brige 오퍼월을 노출한다.
 
 /*!
  @abstract
+ 적립 가능한 브릿지 캠페인 수와 총 리워드 조회 API
+ 
+ @discussion
+ 브릿지 페이지 내 적립 가능한 캠페인 수와 총 리워드: 조회된 결과 값은 offerwallTotalRewardInfo 에서 확인 가능
+ */
++ (void)getBridgeTotalRewardInfo:(NSString *)bridgePlacementId delegate:(id)delegate;
+
+/*!
+ @abstract
  수동으로 고객센터 open api
  
  @discussion
  오퍼월 접근을 통하지 않고 고객센터를 open 한다.
  */
-+ (void)openCSViewController:(UIViewController *)vController userId:(NSString *)userId;
++ (void)openCSViewController:(UIViewController *)vController;
+
+/*!
+@abstract
+캠페인 키를 이용하여 상세 페이지 오픈 API
+
+@discussion
+캠페인 키를 이용 해 특정 캠페인 상세 페이지에 바로 접근한다.
+*/
++ (void)openCampaignDetailViewController:(UIViewController *)vController campaignKey:(NSString *)campaignKey delegate:(id)delegate;
 
 /*!
  @abstract
@@ -209,16 +227,6 @@ brige 오퍼월을 노출한다.
  캠페인 키를 이용 해 SDK에서 대신 참여 시도 처리
  */
 + (void)tryParticipateCampaign:(NSString *)campaignKey;
-
-/*!
-@abstract
-캠페인 키를 이용하여 상세 페이지 오픈 API
-
-@discussion
-캠페인 키를 이용 해 특정 캠페인 상세 페이지에 바로 접근한다.
-*/
-+ (void)openCampaignPage:(UIViewController *)vController campaignKey:(NSString *)campaignKey;
-
 /*!
 @abstract
 이미 오픈되어 있는 오퍼월 강제 종료 api
@@ -233,30 +241,9 @@ brige 오퍼월을 노출한다.
 @protocol AdPopcornOfferwallDelegate <NSObject>
 
 @optional
-
-/*!
- @abstract
- offerwall 리스트가 열리기 전에 호출된다.
- */
 - (void)willOpenOfferWall;
-
-/*!
- @abstract
- offerwall 리스트가 열린직 후 호출된다.
- */
 - (void)didOpenOfferWall;
-
-
-/*!
- @abstract
- offerwall 리스트가 닫히기 전에 호출된다.
- */
 - (void)willCloseOfferWall;
-
-/*!
- @abstract
- offerwall 리스트가 닫힌직 후 호출된다.
- */
 - (void)didCloseOfferWall;
 
 /*!
@@ -268,18 +255,29 @@ brige 오퍼월을 노출한다.
 
 /*!
  @abstract
+ 조회된 브릿지 캠페인 수와 총 리워드 정보를 전달한다.
+ */
+- (void)bridgeTotalRewardInfo:(BOOL)queryResult totalCount:(NSInteger)count
+                      totalReward:(NSString *)reward bridgePlacementId:(NSString *)bridgePlacementId;
+/*!
+ @abstract
  tryParticipateCampaign 결과 값을 전달한다.
  */
 - (void)onParticipateResult:(BOOL)result resultCode:(NSInteger)resultCode
               resultMessage:(NSString *)resultMessage landingURL:(NSString*)landingURL;
-- (void)onOpenCampaignPageResult:(BOOL)result resultCode:(NSInteger)resultCode
-                   resultMessage:(NSString *)resultMessage;
-- (void)onCloseCampaignPage;
+/*!
+ @abstract
+ SDK 내에서 완료 처리된 캠페인 결과 값을 전달한다.
+ */
 - (void)onCompletedCampaign;
+- (void)onCloseCampaignPage; // 구버전
+
+// 상세 페이지 오픈 방식에 대한 결과 이벤트 추가 할것
+- (void)onOpenCampaignDetailPage;
+- (void)onCloseCampaignDetailPage;
 @end
 
 @protocol AdPopcornOfferwallClientRewardDelegate <NSObject>
-
 @optional
 
 /*!
@@ -308,5 +306,4 @@ brige 오퍼월을 노출한다.
  didGiveRewardItemWithRewardKey 메소드에서 reward 지급 처리를 완료한 뒤에 IGAWorks에 요청한 결과가 이 곳으로 리턴된다. isSuccess가 YES가 리턴되어야 최종 reward 지급이 완료된다.
  */
 - (void)onRewardCompleteResult:(BOOL)isSuccess withMessage:(NSString *)message resultCode:(NSInteger)resultCode withCompletedRewardKey:(NSString *)completedRewardKey;
-
 @end
