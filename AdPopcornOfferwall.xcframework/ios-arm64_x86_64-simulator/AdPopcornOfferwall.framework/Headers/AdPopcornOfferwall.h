@@ -8,8 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "APError.h"
-#import "AdPopcornTabInfo.h"
 
 @protocol AdPopcornOfferwallDelegate;
 @protocol AdPopcornOfferwallClientRewardDelegate;
@@ -31,21 +29,6 @@ typedef enum _AdPopcornOfferwallLogLevel
     /*! all logging */
     AdPopcornOfferwallLogTrace
 } AdPopcornOfferwallLogLevel;
-
-typedef enum TabType
-{
-    APOFFERWALL_NONE_TYPE_TAB = -1,
-    APOFFERWALL_ALL_TYPE_TAB = 0,
-    APOFFERWALL_THE_OTHERS_TYPE_TAB = 8,
-    APOFFERWALL_CPS_TYPE_TAB = 9,
-    APOFFERWALL_CPM_TYPE_TAB = 10,
-    APOFFERWALL_CLICK_TYPE_TAB = 11
-} AdPopcornOfferwallTabType;
-
-typedef enum MediaNo
-{
-    APOFFERWALL_LOTTEM_MEM_MEDIA_NO = 0
-} AdPopcornOfferwallCustomMediaNo;
 
 @interface AdPopcornOfferwall : NSObject
 {
@@ -85,44 +68,6 @@ typedef enum MediaNo
  @param userDataDictionaryForFilter    filtering(targeting)을 위한 user data
  */
 + (void)openOfferWallWithViewController:(UIViewController *)vController delegate:(id)delegate userDataDictionaryForFilter:(NSMutableDictionary *)userDataDictionaryForFilter;
-
-/*!
- @abstract
- Open CPM offerwall.
- 
- @discussion
- 리스트 형태의 광고를 노출한다.
- 
- @param vController          광고 리스트를 노출시킬 view controller
- @param delegate             AdPopcornDelegate
- */
-+ (void)openCPMOfferWallWithViewController:(UIViewController *)vController delegate:(id)delegate;
-
-/*!
- @abstract
- Open Custom tab offerwall.
- 
- @discussion
- 노출 탭 커스터마이징하여 오퍼월을 노출한다.
- 
- @param vController       광고 리스트를 노출시킬 view controller
- @param tabInfo              커스텀 탭 정보
- @param delegate             AdPopcornDelegate
- */
-+ (void)openCustomTabOfferWallWithViewController:(UIViewController *)vController tabInfo:(AdPopcornTabInfo *) tabInfo delegate:(id)delegate;
-
-/*!
- @abstract
- Open Custom offerwall.
- 
- @discussion
- 커스터마이징 지원 업체 용 api. 커스터마이징된 오퍼월을 노출한다.
- 
- @param vController          광고 리스트를 노출시킬 view controller
- @param mediaNo               사전에 발급된 커스터마이징 타입 값
- @param delegate             AdPopcornDelegate
- */
-+ (void)openCustomOfferWallWithViewController:(UIViewController *)vController mediaNo:(NSInteger) mediaNo delegate:(id)delegate;
 
 /*!
 @discussion
