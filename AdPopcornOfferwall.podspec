@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|
 s.name         = "AdPopcornOfferwall"
-s.version      = "5.2.1"
+s.version      = "5.2.2"
 s.summary      = "AdPopcornOfferwall.xcframework"
 s.homepage     = "https://github.com/IGAWorksDev/AdPopcornOfferwall-iOS"
 
 s.license      = {
 :type => 'Commercial',
 :text => <<-LICENSE
-All text and design is copyright 2006-2024 Adpopcorn, Inc.
+All text and design is copyright 2006-2026 Adpopcorn, Inc.
 
 All rights reserved.
 
