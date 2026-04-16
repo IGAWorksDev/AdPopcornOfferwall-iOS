@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = "AdPopcornOfferwall"
-s.version      = "5.2.2"
+s.version      = "5.2.3"
 s.summary      = "AdPopcornOfferwall.xcframework"
 s.homepage     = "https://github.com/IGAWorksDev/AdPopcornOfferwall-iOS"
 
@@ -16,7 +16,7 @@ LICENSE
 }
 
 s.platform = :ios, '11.0'
-s.author       = { "mick" => "mick@igaworks.com" }
+s.author       = { "mick" => "mick.kim@adpopcorn.com" }
 s.source       = { :git => "https://github.com/IGAWorksDev/AdPopcornOfferwall-iOS.git", :tag => "#{s.version}" }
 s.resources = "AdPopcornOfferwall.bundle"
 s.ios.vendored_frameworks = 'AdPopcornOfferwall.xcframework'
