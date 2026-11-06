@@ -22,6 +22,8 @@
 @property (nonatomic, copy) NSString *openURL;
 @property (nonatomic, copy) NSString *bridgePlacementId;
 @property (nonatomic, copy) NSString *detailPageCampaignKey;
+// Orientation the screen is locked to (0 : follow the presenting screen)
+@property (nonatomic, assign) UIInterfaceOrientationMask lockedOrientationMask;
 
 - (void)setViewMode:(BOOL)flag;
 - (void)setViewModeWidthSize:(CGFloat)viewWidth;

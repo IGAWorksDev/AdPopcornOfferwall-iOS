@@ -30,6 +30,16 @@ typedef enum _AdPopcornOfferwallLogLevel
     AdPopcornOfferwallLogTrace
 } AdPopcornOfferwallLogLevel;
 
+typedef NS_ENUM(NSInteger, AdPopcornOfferwallOrientation)
+{
+    /*! 오퍼월을 여는 화면의 방향을 따른다 (기본값) */
+    AdPopcornOfferwallOrientationDefault = 0,
+    /*! 세로 고정 */
+    AdPopcornOfferwallOrientationPortrait = 1,
+    /*! 가로 고정 */
+    AdPopcornOfferwallOrientationLandscape = 2
+};
+
 @interface AdPopcornOfferwall : NSObject
 {
 
@@ -177,9 +187,24 @@ brige 오퍼월을 노출한다.
 이미 오픈되어 있는 오퍼월 강제 종료 api
 
 @discussion
-이미 오픈되어 있는 offerwall viewcontroller를 닫아준다.
+SDK가 연 오퍼월, 브릿지, 고객센터, 캠페인 상세 페이지와 그 위에 열린 화면을 닫는다. 네이티브 지면에서 연 화면은 닫지 않는다.
+오퍼월·브릿지·고객센터가 닫히면 willCloseOfferWall/didCloseOfferWall, 캠페인 상세 페이지만 닫히면 onCloseCampaignDetailPage가 호출된다.
+열려 있는 화면이 없으면 아무 동작도 하지 않는다.
 */
 + (void)closeOfferwallViewController;
+
+/*!
+@abstract
+오퍼월 화면 방향 설정 api
+
+@discussion
+오퍼월, 브릿지, 고객센터, 캠페인 상세 페이지를 열 때 적용할 화면 방향을 설정한다. 이미 열려 있는 화면에는 적용되지 않는다.
+세로 또는 가로로 고정하려면 앱의 Info.plist(Supported interface orientations)에서 해당 방향을 허용해야 하며, 허용하지 않은 방향이면 기본값으로 동작한다.
+iPad에서 크기 조절이 가능한 창(멀티태스킹)으로 실행 중이면 방향 고정이 적용되지 않을 수 있다.
+
+@param orientation AdPopcornOfferwallOrientationDefault(기본값), AdPopcornOfferwallOrientationPortrait, AdPopcornOfferwallOrientationLandscape
+*/
++ (void)setOfferwallOrientation:(AdPopcornOfferwallOrientation)orientation;
 
 @end
 
